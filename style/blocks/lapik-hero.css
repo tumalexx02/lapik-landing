@@ -1,0 +1,45 @@
+.lapik-hero {
+  position: relative;
+  background: url(/img/hero-banner.jpg) center center / cover no-repeat;
+  position: relative;
+  padding: 247px 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.lapik-hero__dimmer {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 0;
+}
+
+.lapik-hero__title {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 64px;
+  margin-bottom: 64px;
+}
+
+.lapik-hero__subtitle {
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 120px;
+}
+
+.lapik-hero__buttons-wrapper {
+  display: flex;
+  gap: 60px;
+}
+
+.lapik-hero__button {
+  display: inline-block;
+  font-family: "PT Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 17px 34px;
+}
