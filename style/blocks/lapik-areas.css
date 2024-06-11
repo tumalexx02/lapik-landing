@@ -1,0 +1,40 @@
+.lapik-areas__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  background: url(/img/areas-banner.jpg) center center / cover no-repeat;
+}
+
+.lapik-areas__grid-card {
+  aspect-ratio: 16/9;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: end;
+  align-items: start;
+  padding: 30px;
+  font-size: 22px;
+  line-height: 64px;
+  font-weight: 500;
+  border: 0.5px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  overflow: hidden;
+  transition: background-color 0.1s;
+}
+
+.lapik-areas__grid-card img {
+  /* margin-bottom: 15px; */
+  width: 48px;
+  height: auto;
+}
+
+.lapik-areas__grid-card:hover {
+  background-color: #E12126;
+}
+
+.lapik-areas__grid-card-title {
+  font-size: 28px;
+}
