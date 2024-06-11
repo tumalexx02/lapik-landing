@@ -2,6 +2,8 @@
 @import url(style/blocks/lapik-hero.css);
 @import url(style/blocks/lapik-products.css);
 @import url(style/blocks/lapik-areas.css);
+@import url(style/blocks/lapik-geography.css);
+@import url(style/blocks/lapik-details.css);
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import 'bootstrap/scss/grid';
 
@@ -9,6 +11,10 @@ html, body {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+body {
+  background-color: #EEEEEE;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,9 +30,24 @@ a {
   text-decoration: none;
 }
 
-.title {
+p {
+  margin: 0;
+}
+
+.lapik-title {
   color: #222222;
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   line-height: 64px;
+  margin-bottom: 40px;
+}
+
+.lapik-text {
+  color: #444444;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.container {
+  position: relative !important;
 }
