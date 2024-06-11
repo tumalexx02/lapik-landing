@@ -1,0 +1,74 @@
+.lapik-products {
+  padding: 173px 0;
+}
+
+.lapik-products__title {
+  font-size: 48px;
+  line-height: 64px;
+  margin-bottom: 40px;
+}
+
+.lapik-products__text {
+  color: #444444;
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 75px;
+}
+
+.lapik-products__button {
+  display: inline-block;
+  color: #fff;
+  padding: 18px 23px;
+  background-color: #E12126;
+}
+
+.lapik-products__grid {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.lapik-products__left-wrapper {
+  width: 40%;
+}
+
+.lapik-products__grid-card {
+  font-family: "Montserrat", sans-serif;
+  aspect-ratio: 1/1;
+  display: flex;
+  position: relative;
+  justify-content: start;
+  align-items: end;
+  padding: 30px;
+  font-size: 18px;
+  line-height: 24px;
+  border: 0.5px solid #fff;
+  color: #fff;
+  overflow: hidden;
+  background-color: #E12126 !important;
+}
+
+.lapik-products__grid-card > span {
+  z-index: 2;
+}
+
+.lapik-products__grid-card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 1;
+  transition: 0.1s opacity;
+}
+
+.lapik-products__grid-card:hover > .lapik-products__grid-card-img {
+  opacity: 0;
+}
+
+.lapik-products__wrapper {
+  display: flex;
+  justify-content: space-between;align-items: center;
+}

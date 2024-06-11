@@ -1,5 +1,6 @@
 @import url(style/blocks/header.css);
 @import url(style/blocks/lapik-hero.css);
+@import url(style/blocks/lapik-products.css);
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import 'bootstrap/scss/grid';
 
@@ -20,4 +21,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
+}
+
+.title {
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  line-height: 64px;
 }
