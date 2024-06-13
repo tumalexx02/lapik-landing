@@ -1,0 +1,107 @@
+.lapik-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 0;
+  z-index: 10;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.lapik-header__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.lapik-header__logo {
+  position: relative;
+  height: 40px;
+}
+
+.lapik-header__logo-link, .lapik-header__logo-link_painted {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  transition: opacity 0.3s;
+}
+
+.lapik-header__logo-link {
+  opacity: 1;
+}
+
+.lapik-header__logo-link_painted {
+  opacity: 0;
+}
+
+.lapik-header__logo-link > span {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 10px;
+  transition: color 0.2;
+}
+
+.lapik-header__links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.lapik-header__link {
+  color: #fff;
+  font-size: 18px;
+}
+
+.lapik-header__phone > a {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.lapik-header__phone > a > span {
+  margin-left: 10px;
+}
+
+.lapik-header__phone > a > svg > path {
+  transition: fill 0.3s;
+}
+
+.lapik-header__painted {
+  background-color: #fff;
+}
+
+.lapik-header__painted .lapik-header__logo-link_painted {
+  opacity: 1;
+}
+
+.lapik-header__painted .lapik-header__logo-link {
+  opacity: 0;
+}
+
+.lapik-header__painted .lapik-header__link {
+  color: #222222;
+}
+
+.lapik-header__painted .lapik-header__phone > a {
+  color: #222222;
+}
+
+.lapik-header__painted .lapik-header__phone > a > svg > path {
+  fill: #E12126;
+}
+
+.lapik-header__logo-link_painted > span {
+  font-size: 32px;
+  color: #E12126;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
