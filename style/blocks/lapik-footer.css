@@ -1,0 +1,137 @@
+
+.lapik-footer {
+  padding: 81px 0 43px;
+  background-color: #222222;
+}
+
+.lapik-footer__logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 47px;
+}
+
+.lapik-footer__logo > span {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.lapik-footer__slogan {
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+  color: #AAAAAA;
+  margin-bottom: 40px;
+}
+
+.lapik-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.lapik-footer__contacts-title {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 64px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.lapik-footer__contacts-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.lapik-footer__contacts-wrapper > img {
+  position: absolute;
+  height: 24px;
+  width: auto;
+}
+
+.lapik-footer__mail-wrapper > img {
+  width: 24px;
+  height: auto;
+}
+
+.lapik-footer__contacts-wrapper > span {
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  color: #AAAAAA;
+  margin-left: 64px;
+}
+
+.lapik-footer__links-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.lapik-footer__link {
+  font-family: "PT Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 54px;
+}
+
+.lapik-footer__form {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+}
+
+.lapik-footer__form input, textarea {
+  width: 100%;
+  font-size: 18px;
+  padding: 17px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.lapik-footer__form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.lapik-footer__form button {
+  padding: 17px;
+  font-size: 18px;
+  border: none;
+  color: #FFFFFF;
+  background-color: #E12126;
+}
+
+.lapik-footer__credits {
+  margin-top: 92px !important;
+}
+
+.lapik-footer__credits > span {
+  color: #AAAAAA;
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.lapik-footer__credits > a {
+  text-align: center;
+  text-decoration: underline;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.lapik-footer__dev-logo {
+  display: flex;
+  align-items: center;
+  color: #AAAAAA;
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  gap: 10px;
+}
+
+.lapik-footer__credits-end {
+  display: flex;
+  justify-content: end;
+}
