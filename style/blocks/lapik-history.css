@@ -1,0 +1,48 @@
+.lapik-history {
+  padding: 60px 0 180px;
+  height: 100%;
+  overflow: hidden;
+  transition: padding 0.3s;
+}
+
+.lapik-history_hidden {
+  height: 0;
+  padding: 0;
+}
+
+.lapik-history__dates {
+  list-style-type: none;
+}
+
+.lapik-history__year {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  padding-left: 33px;
+}
+
+.lapik-history__year::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #E12126;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.lapik-history__description {
+  font-size: 16px;
+  line-height: 32px;
+  padding: 20px 27.5px 60px;
+  margin-left: 4.5px;
+  border-left: 1px solid #AAAAAA;
+}
+
+.lapik-history__dates li:last-child .lapik-history__description {
+  border-left: none;
+}
