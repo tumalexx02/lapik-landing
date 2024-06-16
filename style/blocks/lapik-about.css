@@ -1,0 +1,48 @@
+.lapik-about {
+  padding: 264px 0 184px;
+  background: url(/img/about-banner.jpg) center center / cover no-repeat;
+  transition: background 0.5s ease;
+}
+
+.lapik-about__title {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 64px;
+  margin-bottom: 64px;
+}
+
+.lapik-about__text {
+  overflow: hidden;
+  height: auto;
+  color: #fff;
+  font-size: 24px;
+  line-height: 42px;
+  margin-bottom: 60px;
+  transition: margin 0.3s ease, height 0.4s ease;
+}
+
+.lapik-about__buttons-wrapper {
+  display: flex;
+  gap: 60px;
+}
+
+.lapik-about__button {
+  display: inline-block;
+  text-align: center;
+  width: 220px;
+  font-family: "PT Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 17px 16px;
+}
+
+.lapik-about__button_active {
+  border: none;
+  background-color: #E12126;
+}
+
+.lapik-about_active .lapik-about__text {
+  height: 0;
+  margin-bottom: 0;
+}
