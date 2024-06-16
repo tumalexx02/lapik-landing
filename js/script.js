@@ -13,17 +13,28 @@ window.addEventListener('scroll', () => {
 const aboutSections = document.querySelector('.lapik-about')
 const aboutButtons = document.querySelectorAll('.lapik-about__button');
 const historySection = document.querySelector('.lapik-history');
+const jobsSection = document.querySelector('.lapik-jobs');
 
 aboutButtons.forEach((btn, _, btns) => btn.addEventListener('click', (e) => {
   if (e.target.classList.contains('lapik-about__button_active')) {
     e.target.classList.remove('lapik-about__button_active');
     aboutSections.classList.remove('lapik-about_active');
     historySection.classList.add('lapik-history_hidden');
+    jobsSection.classList.add('lapik-jobs_hidden');
     return;
   };
 
   btns.forEach(button => button.classList.remove('lapik-about__button_active'))
   e.target.classList.add('lapik-about__button_active');
   aboutSections.classList.add('lapik-about_active');
-  historySection.classList.remove('lapik-history_hidden');
+
+  const typeOfInfo = e.target.getAttribute('data-about-type');
+
+  if (typeOfInfo === 'history') {
+    historySection.classList.remove('lapik-history_hidden');
+    jobsSection.classList.add('lapik-jobs_hidden');
+  } else if (typeOfInfo === 'jobs') {
+    jobsSection.classList.remove('lapik-jobs_hidden');
+    historySection.classList.add('lapik-history_hidden');
+  }
 }));

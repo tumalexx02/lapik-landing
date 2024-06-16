@@ -1,0 +1,49 @@
+.lapik-jobs {
+  padding: 60px 0 120px;
+  height: 100%;
+  transition: padding 0.3s;
+  overflow: hidden;
+}
+
+.lapik-jobs_hidden {
+  height: 0;
+  padding: 0;
+}
+
+
+.lapik-jobs__job-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 20px;
+  color: #222222;
+}
+
+.lapik-jobs__job-text {
+  color: #444444;
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.lapik-jobs__job-salary {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+  color: #E12126;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.lapik-jobs__job-button {
+  color: #fff;
+  background-color: #E12126;
+  width: 50%;
+  border: none;
+  padding: 18px 0;
+}
+
+.lapik-jobs__job-card {
+  margin-bottom: 60px;
+}
