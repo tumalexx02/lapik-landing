@@ -47,7 +47,7 @@
   border: 0.5px solid #fff;
   color: #fff;
   overflow: hidden;
-  background-color: #E12126 !important;
+  transition: background-color 0.1s;
 }
 
 .lapik-products__grid-card > span {
@@ -69,7 +69,12 @@
   opacity: 0;
 }
 
+.lapik-products__grid-card:hover {
+  background-color: #E12126;
+}
+
 .lapik-products__wrapper {
   display: flex;
-  justify-content: space-between;align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }

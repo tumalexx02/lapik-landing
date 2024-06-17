@@ -32,11 +32,13 @@
 
 .lapik-hero__buttons-wrapper {
   display: flex;
+  align-items: center;
   gap: 60px;
 }
 
 .lapik-hero__button {
   display: inline-block;
+  text-align: center;
   font-family: "PT Sans", sans-serif;
   color: rgba(255, 255, 255, 0.6);
   font-size: 18px;

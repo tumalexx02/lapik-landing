@@ -31,6 +31,10 @@
   height: auto;
 }
 
+.lapik-areas__grid-card span {
+  word-break: break-word;
+}
+
 .lapik-areas__grid-card:hover {
   background-color: #E12126;
 }
