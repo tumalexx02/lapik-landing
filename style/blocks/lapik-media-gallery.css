@@ -1,0 +1,70 @@
+.lapik-media-gallery {
+  padding: 60px 0 120px;
+}
+
+.lapik-media-gallery__card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.lapik-media-gallery__card-title {
+  color: #444444;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.lapik-media-gallery__card-date {
+  color: #888888;
+  font-size: 14px;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.lapik-media-gallery__card-image {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.lapik-media-gallery__card-image img {
+  position: relative;
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.lapik-media-gallery__card-image::before {
+  content: '';
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 130px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(/img/icons/play-icon.svg) center center / cover no-repeat;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.lapik-media-gallery__card:hover .lapik-media-gallery__card-image::before {
+  opacity: 1;
+}
+
+.lapik-media-gallery__card:hover img {
+  opacity: 0.5;
+}
+
+.lapik-media-gallery__card:hover .lapik-media-gallery__card-image {
+  background-color: #000;
+}
