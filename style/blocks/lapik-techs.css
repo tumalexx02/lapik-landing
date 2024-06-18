@@ -2,6 +2,12 @@
   padding: 60px 0 120px;
 }
 
+.lapik-techs__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
 .lapik-techs__text {
   font-size: 16px;
   line-height: 32px;
@@ -39,11 +45,15 @@
   left: 3px;
 }
 
+.lapik-techs__text-wrapper {
+  width: 50%;
+}
+
 .lapik-techs__image {
   position: relative;
   aspect-ratio: 1/1;
-  height: 100%;
-  width: auto;
+  width: calc(50% - 30px);
+  height: auto;
 }
 
 .lapik-techs__image img {

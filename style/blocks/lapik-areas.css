@@ -1,3 +1,7 @@
+.lapik-areas {
+  width: 100vw;
+}
+
 .lapik-areas__grid {
   width: 100%;
   display: grid;
