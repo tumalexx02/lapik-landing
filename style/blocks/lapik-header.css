@@ -12,7 +12,6 @@
 .lapik-header__wrapper {
   display: flex;
   align-items: center;
-  gap: 30px;
 }
 
 .lapik-header__logo {

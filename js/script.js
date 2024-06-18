@@ -38,3 +38,12 @@ aboutButtons.forEach((btn, _, btns) => btn.addEventListener('click', (e) => {
     historySection.classList.add('lapik-history_hidden');
   }
 }));
+
+
+
+const closeHamburger = document.querySelector('.lapik-hamburger__close-btn');
+const hamburger = document.querySelector('.lapik-hamburger');
+
+closeHamburger.addEventListener('click', () => {
+  hamburger.classList.remove('lapik-hamburger_active')
+})

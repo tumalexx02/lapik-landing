@@ -1,3 +1,30 @@
+@media (max-width: 1399px) {
+  .lapik-header__links {
+    gap: 36px;
+  }
+  .lapik-header__link {
+    font-size: 16px;
+  }
+  .lapik-header__phone > a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .lapik-header__logo-link > span, .lapik-header__logo-link_painted > span {
+    font-size: 24px;
+  }
+  .lapik-header__links {
+    gap: 24px;
+  }
+  .lapik-header__link {
+    font-size: 14px;
+  }
+  .lapik-header__phone > a {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 991px) {
   .lapik-header__links {
     display: none;
@@ -71,9 +98,9 @@
     margin-bottom: 30px !important;
   }
 
-  .lapik-header {
+  /* .lapik-header {
     display: none;
-  }
+  } */
 
   .lapik-footer {
     display: none;
@@ -130,6 +157,13 @@
 }
 
 @media (max-width: 575px) {
+  .lapik-hamburger {
+    width: 100vw;
+  }
+  .lapik-hamburger__link {
+    padding: 24px 48px;
+  }
+
   .lapik-hero {
     padding-top: 150px;
     padding-bottom: 80px;
@@ -150,6 +184,7 @@
   .lapik-hero__button {
     width: 100%;
     padding: 12px 0;
+    margin: 0;
     font-size: 14px;
   }
 }

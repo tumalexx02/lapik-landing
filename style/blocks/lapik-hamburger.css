@@ -1,0 +1,75 @@
+.lapik-hamburger {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 200;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(20px);
+}
+
+.lapik-hamburger__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 201;
+  width: 25px;
+}
+
+.lapik-hamburger_active {
+  transform: translateX(0);
+}
+
+.lapik-hamburger__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.lapik-hamburger__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lapik-hamburger__link {
+  color: #fff;
+  font-size: 20px;
+  padding: 24px 16px;
+  margin: 0 80px;
+  transition: 0.2s color ease;
+}
+
+.lapik-hamburger__link:hover {
+  color: #E12126;
+}
+
+.lapik-hamburger__phone {
+  margin-top: 64px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  transition: 0.2s color ease;
+}
+
+.lapik-hamburger__phone:hover svg > path {
+  transition: 0.2s fill ease;
+}
+
+.lapik-hamburger__phone:hover svg > path {
+  fill: #E12126;
+}
+
+.lapik-hamburger__phone:hover {
+  color: #E12126;
+}
