@@ -1,4 +1,3 @@
-
 .lapik-footer {
   padding: 81px 0 43px;
   background-color: #222222;
@@ -83,7 +82,7 @@
 }
 
 .lapik-footer__form input, textarea {
-  width: 100%;
+  width: calc(100% - 17px * 2 - 2px);
   font-size: 18px;
   padding: 17px;
   background-color: transparent;
@@ -109,13 +108,21 @@
 }
 
 .lapik-footer__credits > span {
+  display: flex;
+  align-items: center;
   color: #AAAAAA;
   font-size: 18px;
   font-family: "PT Sans", sans-serif;
 }
 
-.lapik-footer__credits > a {
+.lapik-footer__privacy-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.lapik-footer__credits a {
   text-decoration: underline;
+  vertical-align: middle;
   color: #FFFFFF;
   font-size: 18px;
   font-family: "PT Sans", sans-serif;
@@ -124,13 +131,16 @@
 .lapik-footer__dev-logo {
   display: flex;
   align-items: center;
-  color: #AAAAAA;
-  font-size: 18px;
-  font-family: "PT Sans", sans-serif;
   gap: 10px;
 }
 
-.lapik-footer__credits-end {
+.lapik-footer__dev-logo span {
+  color: #AAAAAA;
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.lapik-footer__dev-logo-wrapper {
   display: flex;
   justify-content: end;
 }

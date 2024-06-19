@@ -222,32 +222,34 @@
 
   <section class="lapik-geography">
     <div class="container">
-      <div class="lapik-geography__left">
-        <h2 class="lapik-title">
-          География поставок
-        </h2>
-        <div class="lapik-text col-3">
-          <p>
-            Мы быстро реагируем на запросы потребителей и осуществляем отгрузку продукции.
-          </p>
-        </div>
-
-        <h4 class="lapik-geography__methods-title">Способы доставки</h4>
-
-        <div class="lapik-geography__methods-wrapper">
-          <div class="lapik-geography__method col-2">
-            <img src="img/icons/train-gray.svg" alt="drill-icon">
-            <span>Железной дорогой</span>
+      <div class="row">
+        <div class="lapik-geography__left">
+          <h2 class="lapik-title">
+            География поставок
+          </h2>
+          <div class="lapik-text col-6 col-lg-4 col-xl-3">
+            <p>
+              Мы быстро реагируем на запросы потребителей и осуществляем отгрузку продукции.
+            </p>
           </div>
-          <div class="lapik-geography__method col-2">
-            <img src="img/icons/truck-gray.svg" alt="drill-icon">
-            <span>Автомобильным транспортом</span>
+  
+          <h4 class="lapik-geography__methods-title">Способы доставки</h4>
+  
+          <div class="lapik-geography__methods-wrapper">
+            <div class="lapik-geography__method col-3 col-lg-2">
+              <img src="img/icons/train-gray.svg" alt="drill-icon">
+              <span>Железной дорогой</span>
+            </div>
+            <div class="lapik-geography__method col-4 col-lg-3">
+              <img src="img/icons/truck-gray.svg" alt="drill-icon">
+              <span>Автомобильным транспортом</span>
+            </div>
           </div>
+  
         </div>
-
+  
+        <img src="img/geography-map.svg" alt="map-img" class="lapik-geography__map offset-3 col-9 offset-lg-2 col-lg-10">
       </div>
-
-      <img src="img/geography-map.svg" alt="map-img" class="lapik-geography__map offset-2 col-10">
     </div>
   </section>
 
@@ -614,7 +616,7 @@
   <footer class="lapik-footer">
     <div class="container">
       <div class="row">
-        <div class="lapik-footer__left-wrapper col-4">
+        <div class="lapik-footer__left-wrapper col-6 col-xl-4">
           <div class="lapik-footer__logo">
             <img src="img/logo.png" alt="logo">
             <span>Лапик</span>
@@ -640,7 +642,7 @@
           </div>
         </div>
   
-        <div class="lapik-footer__links-wrapper col-2 offset-1">
+        <div class="lapik-footer__links-wrapper col-3 col-xl-2 offset-1 offset-lg-0 offset-xl-1">
           <a href="" class="lapik-footer__link">Главная</a>
           <a href="" class="lapik-footer__link">Отрасли применения</a>
           <a href="" class="lapik-footer__link">Продукция</a>
@@ -654,18 +656,20 @@
           <a href="" class="lapik-footer__link">Информация</a>
         </div>
 
-        <form action="/submit_form" method="post" class="lapik-footer__form col-3">
+        <form action="/submit_form" method="post" class="lapik-footer__form col-8 col-lg-6 col-xl-3 offset-2 offset-lg-0">
           <input type="text" name="name" placeholder="Ваше имя" required>
           <input type="tel" name="phone" placeholder="Телефон" required>
           <textarea name="message" rows="4" placeholder="Сообщение" required></textarea>
-          <button type="submit" class="col-8">Связаться с нами</button>
+          <button type="submit">Связаться с нами</button>
         </form>
       </div>
 
       <div class="row lapik-footer__credits">
-        <span class="col-4">2021 © ООО «Лапик». Все права защищены </span>
-        <a href="/" class="col-3 offset-1">Политика конфиденциальности</a>
-        <div class="col-4 lapik-footer__credits-end">
+        <span class="col-6 col-lg-5">2021 © ООО «Лапик». Все права защищены </span>
+        <div class="lapik-footer__privacy-wrapper col-6 col-lg-3">
+          <a href="/">Политика конфиденциальности</a>
+        </div>
+        <div class="col-lg-4 lapik-footer__dev-logo-wrapper">
           <div class="lapik-footer__dev-logo">
             <span>Разработка сайта</span>
             <img src="img/dev-logo.png" alt="lapik-footer__dev-logo">

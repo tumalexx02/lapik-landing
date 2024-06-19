@@ -119,6 +119,7 @@
   height: 40px;
   width: 40px;
   border: 1px solid rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 .lapik-header__hamburger-btn_active svg {

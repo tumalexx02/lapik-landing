@@ -1,3 +1,17 @@
+@media (max-width: 1699px) {
+  .lapik-areas__grid-card-title {
+    font-size: 24px;
+  }
+  .lapik-areas__grid-card {
+    padding: 24px;
+    font-size: 18px;
+    line-height: 48px;
+  }
+  .lapik-areas__grid-card span {
+    margin-top: 10px;
+  }
+}
+
 @media (max-width: 1399px) {
   .lapik-header__links {
     gap: 36px;
@@ -7,6 +21,51 @@
   }
   .lapik-header__phone > a {
     font-size: 16px;
+  }
+
+  .lapik-products__left-wrapper {
+    width: 45%;
+  }
+
+  .lapik-areas__grid-card-title {
+    font-size: 24px;
+  }
+  .lapik-areas__grid-card {
+    padding: 20px;
+    font-size: 15px;
+    line-height: 32px;
+  }
+  .lapik-areas__grid-card span {
+    margin-top: 10px;
+  }
+
+  .lapik-footer__slogan {
+    font-size: 16px;
+  }
+  .lapik-footer__contacts-title {
+    font-size: 20px;
+  }
+  .lapik-footer__contacts-wrapper > span {
+    font-size: 16px;
+  }
+  .lapik-footer__link {
+    font-size: 16px;
+    line-height: 48px;
+  }
+  .lapik-footer__form input, textarea {
+    font-size: 16px;
+  }
+  .lapik-footer__credits > span {
+    font-size: 16px;
+  }
+  .lapik-footer__credits a {
+    font-size: 16px;
+  }
+  .lapik-footer__dev-logo span {
+    font-size: 16px;
+  }
+  .lapik-footer__form button {
+    width: 100%;
   }
 }
 
@@ -23,10 +82,67 @@
   .lapik-header__phone > a {
     font-size: 14px;
   }
+
+  .lapik-hero {
+    padding-bottom: 200px;
+  }
+  .lapik-hero__title {
+    font-size: 56px;
+  }
+  .lapik-hero__subtitle {
+    font-size: 22px;
+    margin-bottom: 80px;
+  }
+  .lapik-hero__button {
+    font-size: 16px;
+  }
+
+  .lapik-products {
+    padding: 120px 0;
+  }
+  .lapik-products__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lapik-areas__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .lapik-areas__grid-card {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 24px;
+  }
+  .lapik-areas__grid-card img {
+    margin-bottom: 10px;
+    width: 36px;
+  }
+  .lapik-areas__grid-card-title {
+    font-size: 20px;
+  }
+
+  .lapik-footer {
+    padding: 72px 0 43px;
+    background-color: #222222;
+  }
+  .lapik-footer__logo {
+    margin-bottom: 32px;
+  }
+  .lapik-footer__slogan {
+    margin-bottom: 32px;
+  }
+  .lapik-footer__contacts-title {
+    line-height: 32px;
+  }
+  .lapik-footer__form {
+    margin-top: 32px !important;
+  }
+  .lapik-footer__credits {
+    margin-top: 72px !important;
+  }
 }
 
 @media (max-width: 991px) {
-  .lapik-header__links {
+  .lapik-header__menu {
     display: none;
   }
   .lapik-header__hamburger-btn {
@@ -66,13 +182,12 @@
   }
   .lapik-hero__button {
     padding: 17px 20px;
-    width: 178px;
+    width: 168px;
+    font-size: 16px;
   }
   .lapik-hero__subtitle {
     margin-bottom: 60px;
   }
-
-
 
   .lapik-products__wrapper {
     flex-direction: column;
@@ -84,25 +199,16 @@
   .lapik-products__grid {
     width: 100%;
   }
-  .lapik-products {
-    padding: 120px 0;
-  }
 
-
-  .lapik-areas__grid {
-    grid-template-columns: repeat(3, 1fr);
+  .lapik-geography__methods-title {
+    margin-top: 120px;
   }
-  .lapik-areas__grid-card {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 24px;
+  .lapik-geography__methods-wrapper {
+    margin-top: 10px;
   }
-  .lapik-areas__grid-card img {
-    margin-bottom: 10px;
-    width: 36px;
-  }
-  .lapik-areas__grid-card-title {
-    font-size: 20px;
+  .lapik-geography__map {
+    top: 70%;
+    transform: translateY(-70%);
   }
 
   .lapik-techs__wrapper {
@@ -116,6 +222,17 @@
   .lapik-techs__image {
     width: 80%;
   }
+
+  .lapik-footer__credits {
+    margin-top: 64px !important;
+  }
+  .lapik-footer__dev-logo-wrapper {
+    justify-content: start;
+    margin-top: 16px !important;
+  }
+  .lapik-footer__privacy-wrapper {
+    justify-content: end;
+  }
 }
 
 @media (max-width: 767px) {
@@ -123,18 +240,6 @@
     font-size: 32px !important;
     line-height: 48px !important;
     margin-bottom: 30px !important;
-  }
-
-  /* .lapik-header {
-    display: none;
-  } */
-
-  .lapik-footer {
-    display: none;
-  }
-
-  .lapik-about {
-    display: none;
   }
 
   .lapik-hero {
@@ -168,18 +273,22 @@
     gap: 0;
   }
 
-  .lapik-areas__grid-card {
-    aspect-ratio: 1/1;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 20px;
+  .lapik-geography__methods-title {
+    font-size: 18px;
+    line-height: 32px;
   }
-  .lapik-areas__grid-card img {
-    width: 28px;
+  .lapik-geography__method > img {
+    width: 36px;
+    height: auto;
   }
+  .lapik-geography__method > span {
+    font-size: 12px;
+    line-height: 24px;
+    color: #444444;
+    display: inline-block;
+  }
+  .lapik-geography__map {
 
-  .lapik-techs__image {
-    width: 100%;
   }
 }
 
