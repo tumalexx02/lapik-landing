@@ -104,3 +104,31 @@
   margin-left: 10px;
 }
 
+.lapik-header__hamburger-btn {
+  display: none;
+  align-items: center;
+  transform: rotate(0);
+  transition: transform 0.2s ease;
+}
+
+.lapik-header__hamburger-icn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.lapik-header__hamburger-btn_active svg {
+  transform: rotate(90deg);
+}
+
+.lapik-header__hamburger-btn svg {
+  height: 100%;
+}
+
+.lapik-header__hamburger-btn svg path {
+  fill: #fff;
+}

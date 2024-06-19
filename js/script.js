@@ -41,9 +41,17 @@ aboutButtons.forEach((btn, _, btns) => btn.addEventListener('click', (e) => {
 
 
 
+const hamburgerBtn = document.querySelector('.lapik-header__hamburger-btn');
+const hamburgerIcon = document.querySelector('.lapik-header__hamburger-icn');
 const closeHamburger = document.querySelector('.lapik-hamburger__close-btn');
 const hamburger = document.querySelector('.lapik-hamburger');
 
 closeHamburger.addEventListener('click', () => {
-  hamburger.classList.remove('lapik-hamburger_active')
+  hamburger.classList.toggle('lapik-hamburger_active');
+  hamburgerBtn.classList.toggle('lapik-header__hamburger-btn_active');
+})
+
+hamburgerIcon.addEventListener('click', () => {
+  hamburger.classList.toggle('lapik-hamburger_active');
+  hamburgerBtn.classList.toggle('lapik-header__hamburger-btn_active');
 })

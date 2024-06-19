@@ -29,6 +29,33 @@
   .lapik-header__links {
     display: none;
   }
+  .lapik-header__hamburger-btn {
+    display: flex;
+    justify-content: end;
+  }
+  .lapik-header__phone {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    aspect-ratio: 1/1;
+    height: 40px;
+    width: 40px;
+  }
+  .lapik-header__phone svg {
+    height: 100%;
+    width: 32px;
+    padding: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  .lapik-header__phone span {
+    display: none;
+  }
+  .lapik-header__painted .lapik-header__hamburger-icn {
+    border: none;
+  }
+  .lapik-header__painted .lapik-header__hamburger-icn svg > path {
+    fill: #E12126;
+  }
 
   .lapik-hero {
     padding-bottom: 200px;
