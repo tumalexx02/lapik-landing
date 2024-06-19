@@ -1,8 +1,8 @@
 @media (max-width: 1699px) {
-  .lapik-areas__grid-card-title {
+  .lapik-areas__grid-card-title, .lapik-details__grid-card-title {
     font-size: 24px;
   }
-  .lapik-areas__grid-card {
+  .lapik-areas__grid-card, .lapik-details__grid-card {
     padding: 24px;
     font-size: 18px;
     line-height: 48px;
@@ -27,10 +27,10 @@
     width: 45%;
   }
 
-  .lapik-areas__grid-card-title {
+  .lapik-areas__grid-card-title, .lapik-details__grid-card-title {
     font-size: 24px;
   }
-  .lapik-areas__grid-card {
+  .lapik-areas__grid-card, .lapik-details__grid-card {
     padding: 20px;
     font-size: 15px;
     line-height: 32px;
@@ -80,7 +80,7 @@
     font-size: 14px;
   }
   .lapik-header__phone > a {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .lapik-hero {
@@ -104,10 +104,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .lapik-areas__grid {
+  .lapik-areas__grid, .lapik-details__grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  .lapik-areas__grid-card {
+  .lapik-areas__grid-card, .lapik-details__grid-card {
     font-size: 16px;
     line-height: 24px;
     padding: 24px;
@@ -116,7 +116,7 @@
     margin-bottom: 10px;
     width: 36px;
   }
-  .lapik-areas__grid-card-title {
+  .lapik-areas__grid-card-title, .lapik-details__grid-card-title {
     font-size: 20px;
   }
 
@@ -153,15 +153,18 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    aspect-ratio: 1/1;
-    height: 40px;
-    width: 40px;
+  }
+  .lapik-header__phone-icn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 48px;
+    width: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
   }
   .lapik-header__phone svg {
     height: 100%;
-    width: 32px;
-    padding: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
   }
   .lapik-header__phone span {
     display: none;
@@ -182,7 +185,7 @@
   }
   .lapik-hero__button {
     padding: 17px 20px;
-    width: 168px;
+    width: 196px;
     font-size: 16px;
   }
   .lapik-hero__subtitle {
@@ -287,40 +290,93 @@
     color: #444444;
     display: inline-block;
   }
-  .lapik-geography__map {
 
+  .lapik-footer__info-wrapper {
+    margin-bottom: 32px;
+  }
+  .lapik-footer__links-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
   }
 }
 
 @media (max-width: 575px) {
+  .lapik-title {
+    font-size: 28px !important;
+    line-height: 36px !important;
+    margin-bottom: 30px !important;
+  }
+  .lapik-text {
+    font-size: 14px !important;
+  }
+
+  .lapik-header {
+   padding: 28px 0; 
+  }
+  .lapik-header__logo-link img, .lapik-header__logo-link_painted img {
+    height: 32px;
+  }
+  .lapik-header__hamburger-icn {
+    width: 40px;
+    height: 40px;
+  }
+  .lapik-header__phone-icn {
+    height: 40px;
+    width: 40px;
+  }
+
   .lapik-hamburger {
     width: 100vw;
   }
   .lapik-hamburger__link {
-    padding: 24px 48px;
+    padding: 24px 0;
+    font-size: 16px;
+  }
+  .lapik-hamburger__phone {
+    margin-top: 20px;
   }
 
   .lapik-hero {
-    padding-top: 150px;
+    padding-top: 130px;
     padding-bottom: 80px;
   }
   .lapik-hero__title {
     font-size: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
   }
   .lapik-hero__subtitle {
-    font-size: 14px;
-    margin-bottom: 32px;
-  }
-  .lapik-hero__buttons-wrapper {
-    flex-direction: column;
-    align-items: start;
-    gap: 10px;
+    font-size: 16px;
+    margin-bottom: 48px;
   }
   .lapik-hero__button {
-    width: 100%;
     padding: 12px 0;
     margin: 0;
+    font-size: 14px;
+  }
+
+  .lapik-products {
+    padding: 80px 0;
+  }
+  .lapik-products__grid-card {
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .lapik-footer__links-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .lapik-footer__links-wrapper a {
+    font-size: 14px;
+  }
+  .lapik-footer__credits > span {
+    font-size: 14px;
+  }
+  .lapik-footer__credits a {
+    font-size: 14px;
+  }
+  .lapik-footer__dev-logo span {
     font-size: 14px;
   }
 }

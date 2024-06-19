@@ -15,6 +15,8 @@
 }
 
 .lapik-header__logo {
+  display: flex;
+  align-items: center;
   position: relative;
   height: 40px;
 }
@@ -93,8 +95,9 @@
   color: #222222;
 }
 
-.lapik-header__painted .lapik-header__phone > a > svg > path {
+.lapik-header__painted .lapik-header__phone svg > path {
   fill: #E12126;
+  transition: fill 0.2s ease;
 }
 
 .lapik-header__logo-link_painted > span {
@@ -116,8 +119,8 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  height: 40px;
-  width: 40px;
+  height: 48px;
+  width: 48px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   cursor: pointer;
 }
@@ -127,6 +130,7 @@
 }
 
 .lapik-header__hamburger-btn svg {
+  display: block;
   height: 100%;
 }
 

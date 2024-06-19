@@ -22,6 +22,11 @@ html, body {
   margin: 0;
   padding: 0;
   border: 0;
+  position: relative;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 html {
@@ -30,7 +35,6 @@ html {
 
 body {
   background-color: #EEEEEE;
-  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {

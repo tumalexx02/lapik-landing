@@ -82,7 +82,7 @@
 }
 
 .lapik-footer__form input, textarea {
-  width: calc(100% - 17px * 2 - 2px);
+  width: 100%;
   font-size: 18px;
   padding: 17px;
   background-color: transparent;
