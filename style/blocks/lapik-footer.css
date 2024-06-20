@@ -135,6 +135,9 @@
 }
 
 .lapik-footer__dev-logo span {
+  display: flex;
+  align-items: center;
+  gap: 3px;
   color: #AAAAAA;
   font-size: 18px;
   font-family: "PT Sans", sans-serif;
