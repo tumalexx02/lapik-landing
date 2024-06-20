@@ -21,6 +21,13 @@
   color: #fff;
   padding: 18px 23px;
   background-color: #E12126;
+  border: 1px solid #E12126;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.lapik-products__button:hover {
+  background-color: transparent;
+  color: #222;
 }
 
 .lapik-products__grid {
