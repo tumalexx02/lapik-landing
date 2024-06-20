@@ -111,7 +111,7 @@
   display: none;
   align-items: center;
   transform: rotate(0);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, border 0.2s ease;
 }
 
 .lapik-header__hamburger-icn {
@@ -123,6 +123,7 @@
   width: 48px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   cursor: pointer;
+  transition: border 0.2s ease;
 }
 
 .lapik-header__hamburger-btn_active svg {
@@ -136,4 +137,8 @@
 
 .lapik-header__hamburger-btn svg path {
   fill: #fff;
+}
+
+.lapik-header__painted .lapik-header__hamburger-btn .lapik-header__hamburger-icn {
+  border: 1px solid #E12126;
 }

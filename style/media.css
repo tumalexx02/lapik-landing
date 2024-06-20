@@ -175,6 +175,9 @@
   .lapik-header__painted .lapik-header__hamburger-icn svg > path {
     fill: #E12126;
   }
+  .lapik-header__painted .lapik-header__phone .lapik-header__phone-icn {
+    border: 1px solid #E12126;
+  }
 
   .lapik-hero {
     padding-bottom: 200px;
@@ -203,8 +206,16 @@
     width: 100%;
   }
 
+  .lapik-areas__grid-card, .lapik-details__grid-card {
+    padding: 18px;
+  }
+  .lapik-areas__grid-card img {
+    width: 32px;
+    margin-bottom: 4px;
+  }
+
   .lapik-geography__methods-title {
-    margin-top: 120px;
+    margin-top: 180px;
   }
   .lapik-geography__methods-wrapper {
     margin-top: 10px;
@@ -244,6 +255,10 @@
     line-height: 48px !important;
     margin-bottom: 30px !important;
   }
+  .lapik-text {
+    font-size: 14px !important;
+    line-height: 28px !important;
+  }
 
   .lapik-hero {
     padding-top: 200px;
@@ -276,9 +291,14 @@
     gap: 0;
   }
 
+  .lapik-areas__grid-card, .lapik-details__grid-card {
+    aspect-ratio: 1/1;
+  }
+
   .lapik-geography__methods-title {
     font-size: 18px;
     line-height: 32px;
+    margin-top: 240px;
   }
   .lapik-geography__method > img {
     width: 36px;
@@ -289,6 +309,10 @@
     line-height: 24px;
     color: #444444;
     display: inline-block;
+  }
+  .lapik-geography__map {
+    top: 65%;
+    transform: translateY(-65%);
   }
 
   .lapik-footer__info-wrapper {
@@ -363,6 +387,25 @@
     font-size: 16px;
   }
 
+  .lapik-areas__grid-card-title, .lapik-details__grid-card-title {
+    font-size: 19px;
+  }
+  .lapik-areas__grid-card, .lapik-details__grid-card {
+    padding: 8px;
+    font-size: 14px;
+    line-height: 18px;
+    border: 0.25px solid #fff;
+  }
+  
+  .lapik-geography__map {
+    position: static;
+    transform: translateY(0);
+    margin-top: 32px;
+  }
+  .lapik-geography__methods-title {
+    margin-top: 32px;
+  }
+
   .lapik-footer__links-wrapper {
     flex-direction: column;
     gap: 10px;
@@ -378,5 +421,19 @@
   }
   .lapik-footer__dev-logo span {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 442px) {
+  .lapik-areas__grid-card-title, .lapik-details__grid-card-title {
+    font-size: 14px;
+  }
+  .lapik-areas__grid-card, .lapik-details__grid-card {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .lapik-areas__grid-card img {
+    width: 24px;
+    margin-bottom: 0;
   }
 }
