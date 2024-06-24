@@ -38,7 +38,7 @@
 .lapik-history__description {
   font-size: 16px;
   line-height: 32px;
-  padding: 20px 27.5px 60px;
+  padding: 20px 0 60px 27.5px;
   margin-left: 4.5px;
   border-left: 1px solid #AAAAAA;
 }

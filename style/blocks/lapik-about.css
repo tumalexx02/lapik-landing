@@ -14,7 +14,7 @@
 .lapik-about__text {
   overflow: hidden;
   height: auto;
-  color: #fff;
+  color: #fff !important;
   font-size: 24px;
   line-height: 42px;
   margin-bottom: 60px;
@@ -23,6 +23,7 @@
 
 .lapik-about__buttons-wrapper {
   display: flex;
+  align-items: center;
   gap: 60px;
 }
 
@@ -37,9 +38,14 @@
   padding: 17px 16px;
 }
 
-.lapik-about__button_active {
-  border: none;
+.lapik-about__button:hover {
   background-color: #E12126;
+  color: #fff;
+}
+
+.lapik-about__button_active {
+  background-color: #E12126;
+  color: #fff;
 }
 
 .lapik-about_active .lapik-about__text {

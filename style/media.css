@@ -1,13 +1,13 @@
 @media (max-width: 1699px) {
-  .lapik-areas__grid-card-title, .lapik-details__grid-card-title {
+  .lapik-areas__grid-card-title, .lapik-details__grid-card-title, .lapik-areas-separate__grid-card-title {
     font-size: 24px;
   }
-  .lapik-areas__grid-card, .lapik-details__grid-card {
+  .lapik-areas__grid-card, .lapik-details__grid-card, .lapik-areas-separate__grid-card {
     padding: 24px;
     font-size: 18px;
     line-height: 48px;
   }
-  .lapik-areas__grid-card span {
+  .lapik-areas__grid-card span, .lapik-areas-separate__grid-card span {
     margin-top: 10px;
   }
 }
@@ -27,15 +27,15 @@
     width: 45%;
   }
 
-  .lapik-areas__grid-card-title, .lapik-details__grid-card-title {
+  .lapik-areas__grid-card-title, .lapik-details__grid-card-title, .lapik-areas-separate__grid-card-title {
     font-size: 24px;
   }
-  .lapik-areas__grid-card, .lapik-details__grid-card {
+  .lapik-areas__grid-card, .lapik-details__grid-card, .lapik-areas-separate__grid-card {
     padding: 20px;
     font-size: 15px;
     line-height: 32px;
   }
-  .lapik-areas__grid-card span {
+  .lapik-areas__grid-card span, .lapik-areas-separate__grid-card span {
     margin-top: 10px;
   }
 
@@ -86,14 +86,14 @@
   .lapik-hero {
     padding-bottom: 200px;
   }
-  .lapik-hero__title {
+  .lapik-hero__title, .lapik-about__title {
     font-size: 56px;
   }
   .lapik-hero__subtitle {
     font-size: 22px;
     margin-bottom: 80px;
   }
-  .lapik-hero__button {
+  .lapik-hero__button, .lapik-about__button {
     font-size: 16px;
   }
 
@@ -104,10 +104,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .lapik-areas__grid, .lapik-details__grid {
+  .lapik-areas__grid, .lapik-details__grid, .lapik-areas-separate__grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  .lapik-areas__grid-card, .lapik-details__grid-card {
+  .lapik-areas__grid-card, .lapik-details__grid-card, .lapik-areas-separate__grid-card {
     font-size: 16px;
     line-height: 24px;
     padding: 24px;
@@ -116,8 +116,29 @@
     margin-bottom: 10px;
     width: 36px;
   }
-  .lapik-areas__grid-card-title, .lapik-details__grid-card-title {
+  .lapik-areas__grid-card-title, .lapik-details__grid-card-title, .lapik-areas-separate__grid-card-title {
     font-size: 20px;
+  }
+
+  .lapik-about {
+    padding: 160px 0 120px;
+  }
+
+  .lapik-history__year {
+    font-size: 20px;
+  }
+  .lapik-history__description {
+    line-height: 28px;
+    padding: 10px 0 30px 27.5px;
+  }
+
+  .lapik-jobs__job-text {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .lapik-jobs__job-salary {
+    font-size: 20px;
+    margin-bottom: 24px;
   }
 
   .lapik-footer {
@@ -182,11 +203,11 @@
   .lapik-hero {
     padding-bottom: 200px;
   }
-  .lapik-hero__buttons-wrapper {
+  .lapik-hero__buttons-wrapper, .lapik-about__buttons-wrapper{
     justify-content: space-between;
     gap: 0;
   }
-  .lapik-hero__button {
+  .lapik-hero__button, .lapik-about__button {
     padding: 17px 20px;
     width: 196px;
     font-size: 16px;
@@ -206,10 +227,10 @@
     width: 100%;
   }
 
-  .lapik-areas__grid-card, .lapik-details__grid-card {
+  .lapik-areas__grid-card, .lapik-details__grid-card, .lapik-areas-separate__grid-card {
     padding: 18px;
   }
-  .lapik-areas__grid-card img {
+  .lapik-areas__grid-card img, .lapik-areas-separate__grid img {
     width: 32px;
     margin-bottom: 4px;
   }
@@ -225,6 +246,27 @@
     transform: translateY(-70%);
   }
 
+  .lapik-about {
+    padding: 120px;
+  }
+  .lapik-about__title {
+    margin-bottom: 32px;
+  }
+
+  .lapik-history:not(.lapik-history_hidden) {
+    padding: 60px 0;
+  }
+  .lapik-jobs:not(.lapik-jobs_hidden) {
+    padding: 60px 0;
+  }
+
+  .lapik-jobs__job-text {
+    font-size: 16px;
+  }
+
+  .lapik-techs {
+    padding: 60px 0 80px;
+  }
   .lapik-techs__wrapper {
     flex-direction: column-reverse;
     gap: 30px;
@@ -268,15 +310,16 @@
     font-size: 48px;
     margin-bottom: 48px;
   }
+
   .lapik-hero__subtitle {
     font-size: 18px;
   }
-  .lapik-hero__buttons-wrapper {
+  .lapik-hero__buttons-wrapper, .lapik-about__buttons-wrapper {
     flex-direction: column;
     align-items: start;
     gap: 10px;
   }
-  .lapik-hero__button {
+  .lapik-hero__button, .lapik-hero__button {
     width: 250px;
   }
 
@@ -291,7 +334,7 @@
     gap: 0;
   }
 
-  .lapik-areas__grid-card, .lapik-details__grid-card {
+  .lapik-areas__grid-card, .lapik-details__grid-card, .lapik-areas-separate__grid-card {
     aspect-ratio: 1/1;
   }
 
@@ -313,6 +356,22 @@
   .lapik-geography__map {
     top: 65%;
     transform: translateY(-65%);
+  }
+
+
+  .lapik-about {
+    padding: 90px 0;
+  }
+  .lapik-about__title {
+    font-size: 48px;
+  }
+
+  .lapik-jobs__job-card {
+    margin-bottom: 48px;
+  }
+
+  .lapik-techs__image {
+    width: 100%;
   }
 
   .lapik-footer__info-wrapper {
@@ -369,6 +428,9 @@
     font-size: 32px;
     margin-bottom: 48px;
   }
+  .lapik-about__title {
+    font-size: 32px;
+  }
   .lapik-hero__subtitle {
     font-size: 16px;
     margin-bottom: 48px;
@@ -387,10 +449,10 @@
     font-size: 16px;
   }
 
-  .lapik-areas__grid-card-title, .lapik-details__grid-card-title {
+  .lapik-areas__grid-card-title, .lapik-details__grid-card-title, .lapik-areas-separate__grid-card-title {
     font-size: 19px;
   }
-  .lapik-areas__grid-card, .lapik-details__grid-card {
+  .lapik-areas__grid-card, .lapik-details__grid-card, .lapik-areas-separate__grid-card {
     padding: 8px;
     font-size: 14px;
     line-height: 18px;
@@ -404,6 +466,13 @@
   }
   .lapik-geography__methods-title {
     margin-top: 32px;
+  }
+
+  .lapik-history:not(.lapik-history_hidden) {
+    padding: 60px 30px;
+  }
+  .lapik-jobs__job-text {
+    font-size: 14px;
   }
 
   .lapik-footer__links-wrapper {
@@ -425,14 +494,14 @@
 }
 
 @media (max-width: 442px) {
-  .lapik-areas__grid-card-title, .lapik-details__grid-card-title {
+  .lapik-areas__grid-card-title, .lapik-details__grid-card-title, .lapik-areas-separate__grid-card-title {
     font-size: 14px;
   }
-  .lapik-areas__grid-card, .lapik-details__grid-card {
+  .lapik-areas__grid-card, .lapik-details__grid-card, .lapik-areas-separate__grid-card {
     font-size: 10px;
     line-height: 16px;
   }
-  .lapik-areas__grid-card img {
+  .lapik-areas__grid-card img, .lapik-areas-separate__grid-card img {
     width: 24px;
     margin-bottom: 0;
   }
