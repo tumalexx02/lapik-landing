@@ -14,7 +14,7 @@
   position: absolute;
   display: block;
   background-color: #EEEEEE;
-  width: 66.66666667%;
+  width: calc(66.66666667% - var(--bs-gutter-x));
   top: 50vh;
   transform: translateY(-50%);
   padding: 80px 100px;
@@ -28,7 +28,7 @@
   font-family: "Montserrat", sans-serif;
   color: #222222;
   font-size: 32px;
-  line-height: 56px;
+  line-height: 150%;
   font-weight: 700;
   margin-bottom: 40px;
 }
@@ -37,7 +37,7 @@
   font-family: "Montserrat", sans-serif;
   color: #222222;
   font-size: 22px;
-  line-height: 33px;
+  line-height: 150%;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -81,6 +81,7 @@
 .lapik-modal-window__submit-wrapper {
   display: flex;
   gap: 30px;
+  margin-top: 20px;
 }
 
 .lapik-modal-window__submit-button {
