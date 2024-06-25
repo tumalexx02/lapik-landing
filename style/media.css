@@ -446,9 +446,16 @@
   }
   .lapik-modal-window__submit-wrapper {
     flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
   }
   .lapik-modal-window__submit-button {
     width: 100%;
+    font-size: 12px;
+    padding: 10px 0;
+  }
+  .lapik-modal-window__disclaimer {
+    font-size: 10px;
   }
 }
 
@@ -558,6 +565,14 @@
   }
   .lapik-footer__dev-logo span {
     font-size: 14px;
+  }
+  .lapik-modal-window__main-title {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .lapik-modal-window__title {
+    font-size: 12px;
+    margin-bottom: 8px;
   }
 }
 
