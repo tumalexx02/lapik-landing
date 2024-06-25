@@ -55,3 +55,31 @@ hamburgerIcon.addEventListener('click', () => {
   hamburger.classList.toggle('lapik-hamburger_active');
   hamburgerBtn.classList.toggle('lapik-header__hamburger-btn_active');
 })
+
+
+
+const modalWindow = document.querySelector('.lapik-modal-window');
+const closeModalBtn = document.querySelector('.lapik-modal-window__close-btn');
+const testModal = document.querySelector('.lapil-modal-test')
+
+closeModalBtn.addEventListener('click', () => {
+  modalWindow.classList.add('lapik-modal-window_hidden');
+})
+
+testModal.addEventListener('click', () => {
+  modalWindow.classList.remove('lapik-modal-window_hidden');
+})
+
+
+new SlimSelect({
+  select: '#selectDetail'
+})
+new SlimSelect({
+  select: '#selectParty'
+})
+new SlimSelect({
+  select: '#selectDimensions'
+})
+new SlimSelect({
+  select: '#selectAccuracy'
+})

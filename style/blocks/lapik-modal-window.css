@@ -4,7 +4,7 @@
   right: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   z-index: 10000;
@@ -12,12 +12,121 @@
 
 .lapik-modal-window__wrapper {
   position: absolute;
-  top: 50vh;
+  display: block;
   background-color: #EEEEEE;
+  width: 66.66666667%;
+  top: 50vh;
   transform: translateY(-50%);
-  padding: 80px 0;
+  padding: 80px 100px;
 }
 
 .lapik-modal-window_hidden {
   display: none;
+}
+
+.lapik-modal-window__main-title {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: 32px;
+  line-height: 56px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.lapik-modal-window__title {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.lapik-modal-window__selectors-wrapper {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.lapik-modal-window__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.lapik-modal-window__form-group {
+  display: flex;
+  gap: 30px;
+}
+
+.lapik-modal-window__input,
+.lapik-modal-window__textarea,
+.lapik-modal-window__select {
+  flex: 1 1;
+  padding: 17px 19px;
+  font-size: 18px;
+  line-height: auto;
+  margin-bottom: 20px;
+  border: 1px solid #CCCCCC;
+  color: #888888;
+  border-radius: 0;
+}
+
+.lapik-modal-window__textarea {
+  background-color: #fff;
+  flex: 1 1 100%;
+  height: 100px;
+}
+
+.lapik-modal-window__submit-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.lapik-modal-window__submit-button {
+  min-width: 230px;
+  background-color: #E12126;
+  color: #FFFFFF;
+  font-size: 18px;
+  border: 1px solid #E12126;
+  padding: 17px 19px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.lapik-modal-window__disclaimer {
+  font-size: 14px;
+  color: #444444;
+  text-align: left;
+}
+
+.lapik-modal-window__disclaimer a {
+  color: #E53935;
+  text-decoration: none;
+}
+
+.lapik-modal-window__close-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.lapik-modal-window__close-btn path {
+  transition: fill 0.1s ease;
+}
+
+.lapik-modal-window__close-btn:hover path {
+  fill: #222222;
+}
+
+.lapil-modal-test {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  background-color: #E12126;
+  border: 1px solid #222222;
+  cursor: pointer;
+  color: #fff;
 }
