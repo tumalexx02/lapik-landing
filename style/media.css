@@ -407,6 +407,12 @@
     margin-bottom: 48px;
   }
 
+  .lapik-techs__text {
+    margin-bottom: 24px;
+  }
+  .lapik-techs__list .lapik-techs__list-item-text {
+    margin-bottom: 24px;
+  }
   .lapik-techs__image {
     width: 100%;
   }

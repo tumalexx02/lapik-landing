@@ -30,7 +30,7 @@
   padding-left: 33px;
 }
 
-.lapik-techs__list li:last-child {
+.lapik-techs__list li:last-child .lapik-techs__list-item-text {
   margin-bottom: 0;
 }
 
