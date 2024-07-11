@@ -1,4 +1,4 @@
-.lapik-areas-separate__grid {
+.lapik-grid-section__grid {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -8,12 +8,12 @@
   /* background: url(/img/details-banner.jpg) center center / cover no-repeat; */
 }
 
-.lapik-areas-separate__grid_hovered .lapik-areas-separate__grid-card-img {
+.lapik-grid-section__grid_hovered .lapik-grid-section__grid-card-img {
   opacity: 0;
 }
 
-.lapik-areas-separate__grid-card {
-  aspect-ratio: 16/9;
+.lapik-grid-section__grid-card {
+  aspect-ratio: 16/10;
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
   align-items: start;
   padding: 30px;
   font-size: 22px;
-  line-height: 64px;
+  line-height: 42px;
   font-weight: 500;
   border: 0.5px solid #fff;
   background-color: transparent;
@@ -31,28 +31,27 @@
   /* transition: 0.1s; */
 }
 
-.lapik-areas-separate__grid-card img {
-  /* margin-bottom: 15px; */
+.lapik-grid-section__grid-card img {
+  margin-bottom: 12px;
   width: 48px;
   height: auto;
   z-index: 2;
   pointer-events: none;
 }
 
-.lapik-areas-separate__grid-card span {
+.lapik-grid-section__grid-card span {
   z-index: 2;
-  pointer-events: none;
 }
 
-/* .lapik-areas-separate__grid-card:hover {
+/* .lapik-grid-section__grid-card:hover {
   background-color: #E12126;
 } */
 
-.lapik-areas-separate__grid-card-title {
+.lapik-grid-section__grid-card-title {
   font-size: 28px;
 }
 
-.lapik-areas-separate__grid-card-img {
+.lapik-grid-section__grid-card-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,10 +61,28 @@
   opacity: 1;
 }
 
-.lapik-areas-separate__grid-card:hover > .lapik-areas-separate__grid-card-img {
+.lapik-grid-section__grid-card:hover > .lapik-grid-section__grid-card-img {
   opacity: 0;
 }
 
-.lapik-areas-separate__grid-card:hover {
+.lapik-grid-section__grid-card:hover {
   background-color: #1B3387;
+}
+
+.lapik-areas__grid-card-sizes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  pointer-events: none;
+}
+
+.lapik-areas__grid-card-button {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 15px;
+  padding: 12px 30px;
+  border: 0.5px #fff solid;
+  cursor: pointer;
+  z-index: 3;
 }

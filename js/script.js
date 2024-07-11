@@ -86,38 +86,25 @@ new SlimSelect({
 
 
 
-const separateGrid = document.querySelector('.lapik-areas-separate__grid');
-const separateGridCards = document.querySelectorAll('.lapik-areas-separate__grid-card');
-const separateGridCardsImgs = document.querySelectorAll('.lapik-areas-separate__grid-card-img');
+const grids = document.querySelectorAll('.lapik-grid-section__grid');
 
-console.log(separateGridCards)
-separateGridCards
-  .forEach(card => {
-    if (card.querySelector('span').classList.contains('lapik-areas-separate__grid-card-title')) return;
+grids.forEach(grid => {
+  grid.addEventListener('mouseover', (e) => {
 
-    card.addEventListener('mouseover', (e) => {
-      let element;
+    let element;
 
-      if (e.target.classList.contains('lapik-areas-separate__grid-card')) {
-        element = e.target.querySelector('.lapik-areas-separate__grid-card-img');
-      } else {
-        element = e.target.parentNode.querySelector('.lapik-areas-separate__grid-card-img');
-      }
+    if (e.target.classList.contains('lapik-grid-section__grid-card')) {
+      element = e.target.querySelector('.lapik-grid-section__grid-card-img');
+    } else {
+      element = e.target.parentNode.querySelector('.lapik-grid-section__grid-card-img');
+    }
 
-      separateGrid.style.background = element.style.background;
-      separateGrid.classList.add('lapik-areas-separate__grid_hovered');
-    })
-
-    card.addEventListener('mouseout', (e) => {
-      let element;
-
-      if (e.target.classList.contains('lapik-areas-separate__grid-card')) {
-        element = e.target.querySelector('.lapik-areas-separate__grid-card-img');
-      } else {
-        element = e.target.parentNode.querySelector('.lapik-areas-separate__grid-card-img');
-      }
-
-      separateGrid.style.background = '#1B3387';
-      separateGrid.classList.remove('lapik-areas-separate__grid_hovered');
-    })
+    grid.style.background = element.style.background;
+    grid.classList.add('lapik-grid-section__grid_hovered');
   })
+
+  grid.addEventListener('mouseout', () => {
+    grid.style.background = '#1B3387';
+    grid.classList.remove('lapik-grid-section__grid_hovered');
+  })
+})

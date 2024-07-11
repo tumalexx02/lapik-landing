@@ -16,7 +16,7 @@
   align-items: start;
   padding: 30px;
   font-size: 22px;
-  line-height: 64px;
+  line-height: 40px;
   font-weight: 500;
   border: 0.5px solid #fff;
   background-color: transparent;
@@ -26,12 +26,12 @@
 }
 
 .lapik-areas__grid-card img {
-  /* margin-bottom: 15px; */
+  margin-bottom: 15px;
   width: 48px;
   height: auto;
 }
 
-.lapik-areas__grid-card span {
+.lapik-areas__grid-card span.lapik-areas__grid-card-subtitle {
   word-break: break-word;
 }
 
@@ -41,4 +41,18 @@
 
 .lapik-areas__grid-card-title {
   font-size: 28px;
+}
+
+.lapik-areas__grid-card-sizes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lapik-areas__grid-card-button {
+  margin-top: 15px;
+  padding: 10px 30px;
+  border: 0.5px #fff solid;
+  cursor: pointer;
 }
