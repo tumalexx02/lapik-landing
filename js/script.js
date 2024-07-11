@@ -60,7 +60,7 @@ hamburgerIcon.addEventListener('click', () => {
 
 const modalWindow = document.querySelector('.lapik-modal-window');
 const closeModalBtn = document.querySelector('.lapik-modal-window__close-btn');
-const testModal = document.querySelector('.lapil-modal-test')
+const testModal = document.querySelector('.lapik-modal-test')
 
 closeModalBtn.addEventListener('click', () => {
   modalWindow.classList.add('lapik-modal-window_hidden');
@@ -107,4 +107,34 @@ grids.forEach(grid => {
     grid.style.background = '#1B3387';
     grid.classList.remove('lapik-grid-section__grid_hovered');
   })
+})
+
+const phoneInput = document.getElementById('modal-phone');
+Inputmask("+7 (999) 999-99-99").mask(phoneInput);
+
+const emailInput = document.getElementById('modal-email');
+Inputmask({
+  mask: "*{1,}@*{1,}.*{2,}",
+  greedy: false,
+  definitions: {
+    '*': {
+      validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~-]",
+      cardinality: 1,
+      casing: "lower"
+    }
+  }
+}).mask(emailInput);
+
+
+
+const orderButtons = document.querySelectorAll('.lapik-areas__grid-card-button');
+const closeModalFormBtn = document.querySelector('.lapik-modal-form__close-btn');
+const modalForm = document.querySelector('.lapik-modal-form');
+
+orderButtons.forEach(btn => btn.addEventListener('click', () => {
+  modalForm.classList.remove('lapik-modal-form_hidden');
+}))
+
+closeModalFormBtn.addEventListener('click', () => {
+  modalForm.classList.add('lapik-modal-form_hidden');
 })

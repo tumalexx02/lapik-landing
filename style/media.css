@@ -273,7 +273,8 @@
     justify-content: end;
   }
 
-  .lapik-modal-window__wrapper {
+  .lapik-modal-window__wrapper, 
+  .lapik-modal-form__wrapper {
     padding: 60px;
   }
   .lapik-modal-window__main-title {
@@ -413,6 +414,11 @@
     margin: 0;
     padding: 0;
   }
+
+  .lapik-modal-form__wrapper {
+    padding: 30px;
+  }
+  
   .lapik-modal-window__wrapper {
     width: 100vw;
     padding: 30px;

@@ -121,8 +121,9 @@
   fill: #222222;
 }
 
-.lapil-modal-test {
+.lapik-modal-test {
   position: fixed;
+  cursor: pointer;
   bottom: 0;
   right: 0;
   padding: 20px;
@@ -130,4 +131,5 @@
   border: 1px solid #222222;
   cursor: pointer;
   color: #fff;
+  z-index: 100000000;
 }
