@@ -4,6 +4,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
   background: #1B3387;
+  /* transition: 0.2s background ease; */
   /* background: url(/img/details-banner.jpg) center center / cover no-repeat; */
 }
 
