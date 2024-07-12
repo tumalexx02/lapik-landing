@@ -319,6 +319,17 @@
     line-height: 28px !important;
   }
 
+  .lapik-products__advantages li {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+
+  .lapik-products__advantages-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
   .lapik-hero {
     padding-top: 200px;
     padding-bottom: 120px;
@@ -418,7 +429,27 @@
   .lapik-modal-form__wrapper {
     padding: 30px;
   }
-  
+  .lapik-modal-form__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .lapik-modal-form__form input, .lapik-modal-form__form textarea {
+    font-size: 15px;
+    padding: 16px 18px;
+  }
+  .lapik-modal-form__form {
+    gap: 12px;
+  }
+  .lapik-modal-form__form button {
+    margin-top: 12px;
+    font-size: 15px;
+    padding: 16px 18px;
+  }
+  .lapik-modal-form__close-btn {
+    top: 30px;
+    right: 30px;
+  }
+
   .lapik-modal-window__wrapper {
     width: 100vw;
     padding: 30px;

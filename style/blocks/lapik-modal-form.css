@@ -14,23 +14,33 @@
   display: none;
 }
 
-.lapik-modal-form__wrapper {
-  position: absolute;
-  display: block;
-  background-color: #EEEEEE;
-  top: 50vh;
-  transform: translateY(-50%);
-  padding: 80px 100px;
+.lapik-modal-form__title {
+  color: #222222;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
-.lapik-modal__form {
+.lapik-modal-form__wrapper {
+  display: block;
+  position: relative;
+  background-color: #EEEEEE;
+  padding: 80px 80px;
+  width: 600px;
+  max-width: 80%;
+  margin: 20px auto 0;
+}
+
+.lapik-modal-form__form {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 20px;
 }
 
-.lapik-modal__form input, textarea {
+.lapik-modal-form__form input, .lapik-modal-form__form textarea {
   width: 100%;
   font-size: 18px;
   padding: 18px 20px;
@@ -39,14 +49,11 @@
   color: #444444;
 }
 
-.lapik-modal__form textarea {
-  padding: 18px 20px;
-  background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
+.lapik-modal-form__form textarea {
   resize: none;
 }
 
-.lapik-modal__form button, .lapik-contacts__contacts-button {
+.lapik-modal-form__form button {
   margin-top: 20px;
   padding: 18px;
   font-size: 18px;
