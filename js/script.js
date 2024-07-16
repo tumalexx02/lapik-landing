@@ -66,10 +66,6 @@ closeModalBtn.addEventListener('click', () => {
   modalWindow.classList.add('lapik-modal-window_hidden');
 })
 
-testModal.addEventListener('click', () => {
-  modalWindow.classList.remove('lapik-modal-window_hidden');
-})
-
 
 new SlimSelect({
   select: '#selectDetail'
@@ -99,8 +95,10 @@ grids.forEach(grid => {
       element = e.target.parentNode.querySelector('.lapik-grid-section__grid-card-img');
     }
 
-    grid.style.background = element.style.background;
-    grid.classList.add('lapik-grid-section__grid_hovered');
+    if (element) {
+      grid.style.background = element.style.background;
+      grid.classList.add('lapik-grid-section__grid_hovered');
+    }
   })
 
   grid.addEventListener('mouseout', () => {

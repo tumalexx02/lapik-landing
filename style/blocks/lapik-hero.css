@@ -6,6 +6,17 @@
   background-color: rgba(0,0,0,0.4);
 }
 
+.lapik-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
 .lapik-hero__dimmer {
   position: absolute;
   top: 0; left: 0;
@@ -20,6 +31,7 @@
   color: #fff;
   font-size: 64px;
   margin-bottom: 64px;
+  z-index: 1;
 }
 
 .lapik-hero__subtitle {
@@ -28,12 +40,14 @@
   color: #fff;
   font-size: 24px;
   margin-bottom: 120px;
+  z-index: 1;
 }
 
 .lapik-hero__buttons-wrapper {
   display: flex;
   align-items: center;
   gap: 60px;
+  z-index: 1;
 }
 
 .lapik-hero__button {

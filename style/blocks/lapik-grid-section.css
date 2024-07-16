@@ -4,12 +4,25 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
   background: #1B3387;
+  position: relative;
   /* transition: 0.2s background ease; */
   /* background: url(/img/details-banner.jpg) center center / cover no-repeat; */
 }
 
 .lapik-grid-section__grid_hovered .lapik-grid-section__grid-card-img {
   opacity: 0;
+}
+
+.lapik-grid-section__grid_hovered::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .lapik-grid-section__grid-card {
@@ -28,7 +41,19 @@
   background-color: transparent;
   color: #fff;
   overflow: hidden;
+  z-index: 1;
   /* transition: 0.1s; */
+}
+
+.lapik-grid-section__grid-card-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .lapik-grid-section__grid-card img {
