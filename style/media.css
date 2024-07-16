@@ -6,6 +6,19 @@
   .lapik-grid-section__grid-card img {
     width: 40px;
   }
+
+  .triple-grid-section__card {
+    padding: 60px;
+  }
+  .triple-grid-section__card h5 {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 6px;
+  }
+  .triple-grid-section__card-subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (max-width: 1599px) {
@@ -56,6 +69,11 @@
   }
   .lapik-footer__form button {
     width: 100%;
+  }
+
+  .triple-grid-section__card-subtitle {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -150,6 +168,10 @@
 
   .lapik-modal-window__wrapper {
     width: calc(100% - var(--bs-gutter-x));
+  }
+
+  .triple-grid-section__card {
+    padding: 20px;
   }
 }
 
@@ -305,6 +327,23 @@
   .lapik-modal-window__close-btn {
     top: 24px;
     right: 24px;
+  }
+
+  .triple-grid-section__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .triple-grid-section__card {
+    aspect-ratio: 7/4;
+    justify-content: center;
+    padding: 80px;
+  }
+  .triple-grid-section__card h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .triple-grid-section__card-subtitle {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -483,6 +522,18 @@
   .lapik-modal-window__disclaimer {
     font-size: 10px;
   }
+
+  .triple-grid-section__card {
+    padding: 40px;
+  }
+  .triple-grid-section__card h5 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  .triple-grid-section__card-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -589,6 +640,11 @@
   .lapik-modal-window__title {
     font-size: 12px;
     margin-bottom: 8px;
+  }
+
+  .triple-grid-section__card {
+    aspect-ratio: 7/5;
+    padding: 20px;
   }
 }
 
