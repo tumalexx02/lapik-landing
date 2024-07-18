@@ -125,7 +125,7 @@ Inputmask({
 
 
 
-const orderButtons = document.querySelectorAll('.lapik-areas__grid-card-button');
+const orderButtons = document.querySelectorAll('.lapik-grid-section__card-button');
 const closeModalFormBtn = document.querySelector('.lapik-modal-form__close-btn');
 const modalForm = document.querySelector('.lapik-modal-form');
 

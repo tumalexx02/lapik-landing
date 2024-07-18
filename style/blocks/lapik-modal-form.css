@@ -8,10 +8,16 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   z-index: 10000;
+  transition: opacity 0.3s;
 }
 
 .lapik-modal-form_hidden {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lapik-modal-form_hidden .lapik-modal-form__wrapper {
+  transform: translateY(-100%);
 }
 
 .lapik-modal-form__title {
@@ -31,6 +37,8 @@
   width: 600px;
   max-width: 80%;
   margin: 20px auto 0;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
 }
 
 .lapik-modal-form__form {
