@@ -102,7 +102,7 @@ grids.forEach(grid => {
   })
 
   grid.addEventListener('mouseout', () => {
-    grid.style.background = '#1B3387';
+    grid.style.background = 'var(--accent-color)';
     grid.classList.remove('lapik-grid-section__grid_hovered');
   })
 })

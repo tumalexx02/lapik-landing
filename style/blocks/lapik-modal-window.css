@@ -86,10 +86,10 @@
 
 .lapik-modal-window__submit-button {
   min-width: 230px;
-  background-color: #E12126;
+  background-color: var(--accent-color);
   color: #FFFFFF;
   font-size: 18px;
-  border: 1px solid #E12126;
+  border: 1px solid var(--accent-color);
   padding: 17px 19px;
   cursor: pointer;
   align-self: center;
@@ -127,7 +127,7 @@
   bottom: 0;
   right: 0;
   padding: 20px;
-  background-color: #E12126;
+  background-color: var(--accent-color);
   border: 1px solid #222222;
   cursor: pointer;
   color: #fff;

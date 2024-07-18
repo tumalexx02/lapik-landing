@@ -62,6 +62,6 @@
 }
 
 .lapik-hero__button:hover {
-  background-color: #E12126;
+  background-color: var(--accent-color);
   color: #fff;
 }

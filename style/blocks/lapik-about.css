@@ -54,12 +54,12 @@
 }
 
 .lapik-about__button:hover {
-  background-color: #E12126;
+  background-color: var(--accent-color);
   color: #fff;
 }
 
 .lapik-about__button_active {
-  background-color: #E12126;
+  background-color: var(--accent-color);
   color: #fff;
 }
 

@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
-  background: #1B3387;
+  background: var(--accent-color);
   position: relative;
   /* transition: 0.2s background ease; */
   /* background: url(/img/details-banner.jpg) center center / cover no-repeat; */
@@ -68,10 +68,6 @@
   z-index: 2;
 }
 
-/* .lapik-grid-section__grid-card:hover {
-  background-color: #E12126;
-} */
-
 .lapik-grid-section__grid-card-title {
   font-size: 28px;
 }
@@ -91,10 +87,10 @@
 }
 
 .lapik-grid-section__grid-card:hover {
-  background-color: #1B3387;
+  background-color: var(--accent-color);
 }
 
-.lapik-areas__grid-card-sizes {
+.lapik-grid-section__grid-card-sizes {
   width: 100%;
   display: flex;
   align-items: center;
@@ -102,12 +98,24 @@
   pointer-events: none;
 }
 
-.lapik-areas__grid-card-button {
+.lapik-grid-section__card-button {
   font-size: 18px;
-  line-height: 28px;
-  margin-top: 15px;
-  padding: 12px 30px;
+  line-height: 0;
   border: 0.5px #fff solid;
   cursor: pointer;
   z-index: 3;
+  margin-top: 0;
+  max-height: 0px;
+  opacity: 0;
+  color: var(--accent-color);
+  transition: max-height 0.2s, margin-top 0.2s, color 0.2s;
+}
+
+.lapik-grid-section__grid-card:hover .lapik-grid-section__card-button {
+  line-height: 28px;
+  max-height: 52px;
+  margin-top: 15px;
+  padding: 12px 30px;
+  color: #fff;
+  opacity: 1;
 }

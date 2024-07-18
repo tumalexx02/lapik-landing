@@ -31,14 +31,14 @@
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   line-height: 33px;
-  color: #E12126;
+  color: var(--accent-color);
   font-weight: 500;
   margin-bottom: 40px;
 }
 
 .lapik-jobs__job-button {
   color: #fff;
-  background-color: #E12126;
+  background-color: var(--accent-color);
   width: 50%;
   border: none;
   padding: 18px 0;

@@ -21,6 +21,10 @@
   height: 40px;
 }
 
+.lapik-header__logo img {
+  max-height: 32px;
+}
+
 .lapik-header__logo-link, .lapik-header__logo-link_painted {
   display: flex;
   align-items: center;
@@ -60,7 +64,7 @@
 }
 
 .lapik-header__link:hover, .lapik-header__painted .lapik-header__link:hover {
-  color: #E12126;
+  color: var(--accent-color);
 }
 
 .lapik-header__phone > a {
@@ -74,7 +78,7 @@
 }
 
 .lapik-header__phone > a:hover {
-  color: #E12126 !important;
+  color: var(--accent-color) !important;
 }
 
 .lapik-header__phone > a > span {
@@ -86,7 +90,7 @@
 }
 
 .lapik-header__phone > a:hover path {
-  fill: #E12126;
+  fill: var(--accent-color);
 }
 
 .lapik-header__painted {
@@ -110,13 +114,13 @@
 }
 
 .lapik-header__painted .lapik-header__phone svg > path {
-  fill: #E12126;
+  fill: var(--accent-color);
   transition: fill 0.2s ease;
 }
 
 .lapik-header__logo-link_painted > span {
   font-size: 24px;
-  color: #E12126;
+  color: var(--accent-color);
   font-weight: 500;
   margin-left: 10px;
 }
@@ -154,5 +158,5 @@
 }
 
 .lapik-header__painted .lapik-header__hamburger-btn .lapik-header__hamburger-icn {
-  border: 1px solid #E12126;
+  border: 1px solid var(--accent-color);
 }

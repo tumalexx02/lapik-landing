@@ -45,7 +45,7 @@
 }
 
 /* .lapik-areas-separate__grid-card:hover {
-  background-color: #E12126;
+  background-color: var(--accent-color);
 } */
 
 .lapik-areas-separate__grid-card-title {

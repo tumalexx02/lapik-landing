@@ -60,7 +60,7 @@
   line-height: 22px;
   border: none;
   color: #FFFFFF;
-  background-color: #E12126;
+  background-color: var(--accent-color);
 }
 
 .lapik-modal-form__close-btn {

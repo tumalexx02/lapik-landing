@@ -22,6 +22,12 @@
 
 @import url(style/media.css);
 
+:root {
+  --accent-color: #a16136;
+  --top-padding: 80px;
+  --bottom-padding: 80px;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -35,6 +41,7 @@ html, body {
 
 html {
   scroll-behavior: smooth;
+  scroll-margin-top: 120px;
 }  
 
 body {

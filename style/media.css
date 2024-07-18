@@ -207,10 +207,10 @@
     border: none;
   }
   .lapik-header__painted .lapik-header__hamburger-icn svg > path {
-    fill: #E12126;
+    fill: var(--accent-color);
   }
   .lapik-header__painted .lapik-header__phone .lapik-header__phone-icn {
-    border: 1px solid #E12126;
+    border: 1px solid var(--accent-color);
   }
 
   .lapik-hero {
@@ -643,8 +643,8 @@
   }
 
   .triple-grid-section__card {
-    aspect-ratio: 7/5;
-    padding: 20px;
+    aspect-ratio: 7/6;
+    padding: 10px;
   }
 }
 

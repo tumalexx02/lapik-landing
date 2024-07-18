@@ -9,6 +9,10 @@
   margin-bottom: 47px;
 }
 
+.lapik-footer__logo img {
+  max-height: 42px;
+}
+
 .lapik-footer__logo > span {
   font-size: 32px;
   color: #fff;
@@ -102,7 +106,7 @@
   font-size: 18px;
   border: none;
   color: #FFFFFF;
-  background-color: #E12126;
+  background-color: var(--accent-color);
 }
 
 .lapik-footer__credits {
