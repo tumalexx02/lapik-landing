@@ -126,10 +126,11 @@ Inputmask({
 
 
 const orderButtons = document.querySelectorAll('.lapik-grid-section__card-button');
+const detailsButtons = document.querySelectorAll('.triple-grid-section__card-button');
 const closeModalFormBtn = document.querySelector('.lapik-modal-form__close-btn');
 const modalForm = document.querySelector('.lapik-modal-form');
 
-orderButtons.forEach(btn => btn.addEventListener('click', () => {
+[...orderButtons, ...detailsButtons].forEach(btn => btn.addEventListener('click', () => {
   modalForm.classList.remove('lapik-modal-form_hidden');
 }))
 

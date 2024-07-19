@@ -1,3 +1,7 @@
+.triple-grid-section {
+  padding-top: var(--top-padding);
+}
+
 .triple-grid-section__grid {
   width: 100%;
   display: grid;
@@ -49,6 +53,7 @@
   font-size: 48px;
   line-height: 56px;
   z-index: 2;
+  transition: margin 0.2s;
 }
 
 .triple-grid-section__card-subtitle {
@@ -57,3 +62,26 @@
   font-size: 24px;
   line-height: 32px;
 }
+
+.triple-grid-section__card:hover h5 {
+  margin-top: calc(75% - 16px - 32px - 24px);
+}
+
+.triple-grid-section__card:hover .triple-grid-section__card-button {
+  padding: 12px 32px;
+  margin-top: 16px;
+  opacity: 1;
+  max-height: 56px;
+}
+
+.triple-grid-section__card-button {
+  z-index: 2;
+  max-height: 0;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 32px;
+  border: 0.5px solid #fff;
+  opacity: 0;
+  transition: margin 0.2s, opacity 0.2s, max-height 0.2s, padding 0.2s;
+}
+

@@ -4,13 +4,10 @@
 }
 
 .lapik-contacts__contacts {
+  margin-top: 53px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.lapik-contacts__contacts {
-  margin-bottom: 50px;
 }
 
 .lapik-contacts__contacts-title {
@@ -47,11 +44,19 @@
   height: auto;
 }
 
-.lapik-contacts__contacts-wrapper > span {
+.lapik-contacts__contacts-wrapper span, .lapik-contacts__contacts-wrapper a {
   font-size: 18px;
   font-family: "PT Sans", sans-serif;
   color: #444444;
   margin-left: 64px;
+}
+
+.lapik-contacts__contacts-wrapper a {
+  text-decoration: underline;
+}
+
+.lapik-contacts__contacts-wrapper a:hover {
+  color: var(--accent-color);
 }
 
 .lapik-contacts__links-wrapper {
@@ -97,4 +102,5 @@
   border: none;
   color: #FFFFFF;
   background-color: var(--accent-color);
+  cursor: pointer;
 }
