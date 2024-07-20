@@ -106,7 +106,7 @@
     </nav>
   </div>
 
-  <section class="lapik-hero">
+  <section class="lapik-hero" id="lapik-hero">
     <div class="container">
       <div class="row">
         <h1 class="lapik-hero__title">ДИЗАЙНЕРСКИЕ СТОЛЫ<br>ИЗ СРУБА ДРЕВЕСНОГО<br>МАССИВА</h1>
@@ -910,7 +910,30 @@
     </div>
   </section> -->
 
-  <section class="triple-grid-section">
+  <section class="news" id="news">
+    <div class="container">
+      <div class="row">
+        <h2 class="lapik-title">
+          Новости
+        </h2>
+        <div class="news__container">
+          <div class="news__news-card col-xl-6">
+            <img src="img/about-banner.jpeg" class="news__card-image" alt="news-card-img">
+            <div class="news__text-wrapper">
+              <span class="news__text-date">14.08.2020</span>
+              <h6 class="news__text-title">Заголовок новости</h6>
+              <p class="news__text-p">
+                Отгрузили стол в Екб (и др. города УрФО). Отгрузили стол в Екб (и др. города УрФО). Отгрузили стол в Екб (и др. города УрФО). Отгрузили стол в Екб (и др. города УрФО). Отгрузили стол в Екб (и др. города УрФО).
+              </p>
+              <div class="news__text-more-button">Читать далее</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="triple-grid-section" id="triple-grid-section">
     <div class="container">
       <h2 class="lapik-title">
         Дополнительные услуги
@@ -939,7 +962,7 @@
     </div>
   </section>
 
-  <section class="lapik-contacts">
+  <section class="lapik-contacts" id="lapik-contacts">
     <div class="container">
       <div class="row">
         <h2 class="lapik-title">
@@ -996,6 +1019,12 @@
         </div>
       </div>
     </div>
+
+    <div style="position:relative;overflow:hidden;">
+      <a href="https://yandex.ru/maps/56/chelyabinsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Челябинск</a>
+      <a href="https://yandex.ru/maps/56/chelyabinsk/house/tominskaya_ulitsa_8_1/YkgYdQ9gT0IGQFtvfX1zdXVlYA==/?ll=61.380629%2C55.124890&utm_medium=mapframe&utm_source=maps&z=18.21" style="color:#eee;font-size:12px;position:absolute;top:14px;">Томинская улица, 8/1 — Яндекс Карты</a>
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=61.380629%2C55.124890&mode=whatshere&whatshere%5Bpoint%5D=61.380814%2C55.124993&whatshere%5Bzoom%5D=17&z=18.21" width="100%" height="640px" border="none" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+    </div>
   </section>
 
   <footer class="lapik-footer">
@@ -1028,17 +1057,15 @@
         </div>
   
         <div class="lapik-footer__links-wrapper col-6 col-sm-12 col-md-3 col-xl-2 offset-0 offset-md-1 offset-lg-0 offset-xl-1">
-          <a href="" class="lapik-footer__link">Главная</a>
-          <a href="" class="lapik-footer__link">Отрасли применения</a>
-          <a href="" class="lapik-footer__link">Продукция</a>
-          <a href="" class="lapik-footer__link">Измерения</a>
+          <a href="#lapik-hero" class="lapik-footer__link">Главная</a>
+          <a href="#lapik-products" class="lapik-footer__link">Продукция</a>
+          <a href="#triple-grid-section" class="lapik-footer__link">Доп. услуги</a>
         </div>
 
         <div class="lapik-footer__links-wrapper col-6 col-sm-12 col-md-2">
-          <a href="" class="lapik-footer__link">Софт</a>
-          <a href="" class="lapik-footer__link">Услуги</a>
-          <a href="" class="lapik-footer__link">Контакты</a>
-          <a href="" class="lapik-footer__link">Информация</a>
+          <a href="#lapik-about" class="lapik-footer__link">О Компании</a>
+          <a href="" class="lapik-footer__link">Новости</a>
+          <a href="#lapik-contacts" class="lapik-footer__link">Контакты</a>
         </div>
 
         <form action="/submit_form" method="post" class="lapik-footer__form col-12 col-sm-8 col-lg-6 col-xl-3 offset-0 offset-sm-2 offset-lg-0">

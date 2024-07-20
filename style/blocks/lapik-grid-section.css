@@ -1,3 +1,7 @@
+.lapik-grid-section {
+  scroll-margin-top: 120px;
+}
+
 .lapik-grid-section__grid {
   width: 100%;
   display: grid;

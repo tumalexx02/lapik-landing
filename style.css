@@ -17,6 +17,7 @@
 @import url(style/blocks/lapik-modal-window.css);
 @import url(style/blocks/lapik-modal-form.css);
 @import url(style/blocks/lapik-grid-section.css);
+@import url(style/blocks/news.css);
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import 'bootstrap/scss/grid';
 
@@ -41,7 +42,6 @@ html, body {
 
 html {
   scroll-behavior: smooth;
-  scroll-margin-top: 120px;
 }  
 
 body {
