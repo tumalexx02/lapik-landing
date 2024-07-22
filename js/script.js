@@ -163,3 +163,15 @@ closeNewsModalBtn.addEventListener('click', () => {
   newsModal.classList.add('news-modal-window_hidden');
   freeBackgroundScroll();
 })
+
+var swiper = new Swiper('.swiper-container', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+});

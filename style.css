@@ -28,6 +28,8 @@
   --accent-color: #a16136;
   --top-padding: 80px;
   --bottom-padding: 80px;
+  --swiper-pagination-bottom: 40px;
+  --swiper-pagination-bullet-horizontal-gap: 8px;
 }
 
 html, body {

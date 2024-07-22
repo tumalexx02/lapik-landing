@@ -8,6 +8,10 @@
   <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet"></link>
   <link rel="stylesheet" href="style/bootstrap-grid-min.css">
   <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 </head>
 <body>
   <header class="lapik-header">
@@ -107,7 +111,7 @@
   </div>
 
   <section class="lapik-hero" id="lapik-hero">
-    <div class="container">
+    <div class="container lapik-hero__content">
       <div class="row">
         <h1 class="lapik-hero__title">ДИЗАЙНЕРСКИЕ СТОЛЫ<br>ИЗ СРУБА ДРЕВЕСНОГО<br>МАССИВА</h1>
         <span class="lapik-hero__subtitle">Мир исключительного домашнего декора ждет вас!</span>
@@ -118,6 +122,14 @@
         </div>
       </div>
     </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/hero-banner.jpg" alt="Slide 1"></div>
+        <div class="swiper-slide"><img src="img/grid-images/grid-image-2.jpg" alt="Slide 2"></div>
+        <div class="swiper-slide"><img src="img/grid-images/grid-image-9.jpg" alt="Slide 3"></div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
   </section>
 
   <section class="lapik-products" id="lapik-products">
@@ -1277,6 +1289,7 @@
     Раскрыть модальное окно
   </div> -->
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6-beta.29/inputmask.min.js"></script>
   <script src="js/script.js"></script>
 </body>
