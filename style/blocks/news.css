@@ -20,6 +20,7 @@
 .news__card-image {
   aspect-ratio: 1/1;
   height: 100%;
+  object-fit: cover;
 }
 
 .news__text-wrapper {
@@ -67,6 +68,10 @@
 
 .news__news-card:hover .news__text-more-button {
   text-decoration: underline;
+}
+
+.news__news-card:hover {
+  box-shadow: 0 5px 5px rgba(136, 136, 136, 0.3);
 }
 
 @media (max-width: 1199px) {

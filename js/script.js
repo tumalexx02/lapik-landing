@@ -1,3 +1,11 @@
+function blockBackgroundScroll() {
+  document.querySelector('body').style.overflow = 'hidden';
+}
+
+function freeBackgroundScroll() {
+  document.querySelector('body').style.overflow = 'auto';
+}
+
 const header = document.querySelector('.lapik-header');
 
 window.addEventListener('scroll', () => {
@@ -132,8 +140,26 @@ const modalForm = document.querySelector('.lapik-modal-form');
 
 [...orderButtons, ...detailsButtons].forEach(btn => btn.addEventListener('click', () => {
   modalForm.classList.remove('lapik-modal-form_hidden');
+  blockBackgroundScroll();
 }))
 
 closeModalFormBtn.addEventListener('click', () => {
   modalForm.classList.add('lapik-modal-form_hidden');
+  freeBackgroundScroll();
+})
+
+
+
+const newsCards = document.querySelectorAll('.news__news-card');
+const closeNewsModalBtn = document.querySelector('.news-modal-window__close-btn');
+const newsModal = document.querySelector('.news-modal-window');
+
+newsCards.forEach(card => card.addEventListener('click', () => {
+  newsModal.classList.remove('news-modal-window_hidden');
+  blockBackgroundScroll();
+}));
+
+closeNewsModalBtn.addEventListener('click', () => {
+  newsModal.classList.add('news-modal-window_hidden');
+  freeBackgroundScroll();
 })
