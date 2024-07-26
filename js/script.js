@@ -70,13 +70,12 @@ hamburgerIcon.addEventListener('click', () => {
 
 
 
-const modalWindow = document.querySelector('.lapik-modal-window');
-const closeModalBtn = document.querySelector('.lapik-modal-window__close-btn');
-const testModal = document.querySelector('.lapik-modal-test')
+// const modalWindow = document.querySelector('.lapik-modal-window');
+// const closeModalBtn = document.querySelector('.lapik-modal-window__close-btn');
 
-closeModalBtn.addEventListener('click', () => {
-  modalWindow.classList.add('lapik-modal-window_hidden');
-})
+// closeModalBtn.addEventListener('click', () => {
+//   modalWindow.classList.add('lapik-modal-window_hidden');
+// })
 
 
 new SlimSelect({
@@ -97,28 +96,29 @@ new SlimSelect({
 const grids = document.querySelectorAll('.lapik-grid-section__grid');
 
 grids.forEach(grid => {
-  if (!isTouchDevice()) {
-    grid.addEventListener('mouseover', (e) => {
-  
+  grid.addEventListener('mouseover', (e) => {
+    if (!isTouchDevice()) {
       let element;
-  
+
       if (e.target.classList.contains('lapik-grid-section__grid-card')) {
         element = e.target.querySelector('.lapik-grid-section__grid-card-img');
       } else {
         element = e.target.parentNode.querySelector('.lapik-grid-section__grid-card-img');
       }
-  
+
       if (element) {
         grid.style.background = element.style.background;
         grid.classList.add('lapik-grid-section__grid_hovered');
       }
-    })
-  
-    grid.addEventListener('mouseout', () => {
+    }
+  })
+
+  grid.addEventListener('mouseout', () => {
+    if (!isTouchDevice()) {
       grid.style.background = 'var(--accent-color)';
       grid.classList.remove('lapik-grid-section__grid_hovered');
-    })
-  }
+    }
+  })
 })
 
 const phoneInput = document.getElementById('modal-phone');
