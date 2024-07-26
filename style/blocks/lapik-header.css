@@ -22,7 +22,7 @@
 }
 
 .lapik-header__logo img {
-  max-height: 32px;
+  max-height: 40px;
 }
 
 .lapik-header__logo-link, .lapik-header__logo-link_painted {
@@ -54,7 +54,7 @@
   list-style-type: none;
   display: flex;
   align-items: center;
-  gap: 45px;
+  gap: 60px;
 }
 
 .lapik-header__link {
@@ -159,4 +159,87 @@
 
 .lapik-header__painted .lapik-header__hamburger-btn .lapik-header__hamburger-icn {
   border: 1px solid var(--accent-color);
+}
+
+@media (max-width: 1399px) {
+  .lapik-header__links {
+    gap: 36px;
+  }
+  .lapik-header__link {
+    font-size: 16px;
+  }
+  .lapik-header__phone > a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .lapik-header__logo-link > span, .lapik-header__logo-link_painted > span {
+    font-size: 24px;
+  }
+  .lapik-header__links {
+    gap: 24px;
+  }
+  .lapik-header__link {
+    font-size: 14px;
+  }
+  .lapik-header__phone > a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .lapik-header__menu {
+    display: none;
+  }
+  .lapik-header__hamburger-btn {
+    display: flex;
+    justify-content: end;
+  }
+  .lapik-header__phone {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .lapik-header__phone-icn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 48px;
+    width: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  .lapik-header__phone svg {
+    height: 100%;
+  }
+  .lapik-header__phone span {
+    display: none;
+  }
+  .lapik-header__painted .lapik-header__hamburger-icn {
+    border: none;
+  }
+  .lapik-header__painted .lapik-header__hamburger-icn svg > path {
+    fill: var(--accent-color);
+  }
+  .lapik-header__painted .lapik-header__phone .lapik-header__phone-icn {
+    border: 1px solid var(--accent-color);
+  }
+}
+
+@media (max-width: 575px) {
+  .lapik-header {
+    padding: 28px 0; 
+   }
+   .lapik-header__logo-link img, .lapik-header__logo-link_painted img {
+     height: 32px;
+   }
+   .lapik-header__hamburger-icn {
+     width: 40px;
+     height: 40px;
+   }
+   .lapik-header__phone-icn {
+     height: 40px;
+     width: 40px;
+   }
 }

@@ -27,11 +27,6 @@
   /* transition: background-color 0.1s ease, color 0.1s ease; */
 }
 
-.lapik-products__button:hover {
-  background-color: transparent;
-  color: #222;
-}
-
 .lapik-products__grid {
   width: 50%;
   display: grid;
@@ -48,7 +43,7 @@
   aspect-ratio: 1/1;
   display: flex;
   position: relative;
-  justify-content: start;
+  justify-content: center;
   align-items: end;
   padding: 30px;
   font-size: 18px;
@@ -72,6 +67,7 @@
 
 .lapik-products__grid-card > span {
   z-index: 2;
+  text-align: center;
 }
 
 .lapik-products__grid-card-img {
@@ -83,14 +79,6 @@
   z-index: 1;
   opacity: 1;
   /* transition: 0.1s opacity; */
-}
-
-.lapik-products__grid-card:hover > .lapik-products__grid-card-img {
-  opacity: 0;
-}
-
-.lapik-products__grid-card:hover {
-  background-color: var(--accent-color);
 }
 
 .lapik-products__wrapper {
@@ -137,4 +125,70 @@
   background-color: var(--accent-color);
   top: 12px;
   left: 3px;
+}
+
+@media (hover: hover) {
+  .lapik-products__grid-card:hover > .lapik-products__grid-card-img {
+    opacity: 0;
+  }
+
+  .lapik-products__grid-card:hover {
+    background-color: var(--accent-color);
+  }
+
+  .lapik-products__button:hover {
+    background-color: transparent;
+    color: #222;
+  }
+}
+
+@media (max-width: 1399px) {
+  .lapik-products__left-wrapper {
+    width: 45%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .lapik-products {
+    padding: 120px 0;
+  }
+  .lapik-products__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .lapik-products__wrapper {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .lapik-products__left-wrapper {
+    width: 100%;
+  }
+  .lapik-products__grid {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .lapik-products {
+    padding: 120px 0;
+  }
+  .lapik-products__button {
+    margin-top: 50px;
+  }
+  .lapik-products__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }  
+  .lapik-products__advantages li {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+  .lapik-products__advantages-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
 }

@@ -47,3 +47,29 @@
 .lapik-jobs__job-card {
   margin-bottom: 60px;
 }
+
+@media (max-width: 1199px) {
+  .lapik-jobs__job-text {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .lapik-jobs__job-salary {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .lapik-jobs:not(.lapik-jobs_hidden) {
+    padding: 60px 0;
+  }
+  .lapik-jobs__job-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .lapik-jobs__job-card {
+    margin-bottom: 48px;
+  }
+}

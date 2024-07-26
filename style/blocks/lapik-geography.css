@@ -45,3 +45,38 @@
   right: 0;
   z-index: -1;
 }
+
+@media (max-width: 991px) {
+  .lapik-geography__methods-title {
+    margin-top: 180px;
+  }
+  .lapik-geography__methods-wrapper {
+    margin-top: 10px;
+  }
+  .lapik-geography__map {
+    top: 70%;
+    transform: translateY(-70%);
+  }
+}
+
+@media (max-width: 767px) {
+  .lapik-geography__methods-title {
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 240px;
+  }
+  .lapik-geography__method > img {
+    width: 36px;
+    height: auto;
+  }
+  .lapik-geography__method > span {
+    font-size: 12px;
+    line-height: 24px;
+    color: #444444;
+    display: inline-block;
+  }
+  .lapik-geography__map {
+    top: 65%;
+    transform: translateY(-65%);
+  }
+}

@@ -1,3 +1,7 @@
+function isTouchDevice() {
+  return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+}
+
 function blockBackgroundScroll() {
   document.querySelector('body').style.overflow = 'hidden';
 }
@@ -21,14 +25,14 @@ window.addEventListener('scroll', () => {
 const aboutSections = document.querySelector('.lapik-about')
 const aboutButtons = document.querySelectorAll('.lapik-about__button');
 const historySection = document.querySelector('.lapik-history');
-const jobsSection = document.querySelector('.lapik-jobs');
+const newsSection = document.querySelector('.news');
 
 aboutButtons.forEach((btn, _, btns) => btn.addEventListener('click', (e) => {
   if (e.target.classList.contains('lapik-about__button_active')) {
     e.target.classList.remove('lapik-about__button_active');
     aboutSections.classList.remove('lapik-about_active');
     historySection.classList.add('lapik-history_hidden');
-    jobsSection.classList.add('lapik-jobs_hidden');
+    newsSection.classList.add('news_hidden');
     return;
   };
 
@@ -40,9 +44,9 @@ aboutButtons.forEach((btn, _, btns) => btn.addEventListener('click', (e) => {
 
   if (typeOfInfo === 'history') {
     historySection.classList.remove('lapik-history_hidden');
-    jobsSection.classList.add('lapik-jobs_hidden');
-  } else if (typeOfInfo === 'jobs') {
-    jobsSection.classList.remove('lapik-jobs_hidden');
+    newsSection.classList.add('news_hidden');
+  } else if (typeOfInfo === 'news') {
+    newsSection.classList.remove('news_hidden');
     historySection.classList.add('lapik-history_hidden');
   }
 }));
@@ -93,26 +97,28 @@ new SlimSelect({
 const grids = document.querySelectorAll('.lapik-grid-section__grid');
 
 grids.forEach(grid => {
-  grid.addEventListener('mouseover', (e) => {
-
-    let element;
-
-    if (e.target.classList.contains('lapik-grid-section__grid-card')) {
-      element = e.target.querySelector('.lapik-grid-section__grid-card-img');
-    } else {
-      element = e.target.parentNode.querySelector('.lapik-grid-section__grid-card-img');
-    }
-
-    if (element) {
-      grid.style.background = element.style.background;
-      grid.classList.add('lapik-grid-section__grid_hovered');
-    }
-  })
-
-  grid.addEventListener('mouseout', () => {
-    grid.style.background = 'var(--accent-color)';
-    grid.classList.remove('lapik-grid-section__grid_hovered');
-  })
+  if (!isTouchDevice()) {
+    grid.addEventListener('mouseover', (e) => {
+  
+      let element;
+  
+      if (e.target.classList.contains('lapik-grid-section__grid-card')) {
+        element = e.target.querySelector('.lapik-grid-section__grid-card-img');
+      } else {
+        element = e.target.parentNode.querySelector('.lapik-grid-section__grid-card-img');
+      }
+  
+      if (element) {
+        grid.style.background = element.style.background;
+        grid.classList.add('lapik-grid-section__grid_hovered');
+      }
+    })
+  
+    grid.addEventListener('mouseout', () => {
+      grid.style.background = 'var(--accent-color)';
+      grid.classList.remove('lapik-grid-section__grid_hovered');
+    })
+  }
 })
 
 const phoneInput = document.getElementById('modal-phone');

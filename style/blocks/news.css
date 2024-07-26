@@ -1,6 +1,13 @@
 .news {
   padding-top: var(--top-padding);
   padding-bottom: var(--bottom-padding);
+  overflow: hidden;
+  transition: padding 0.3s;
+}
+
+.news_hidden {
+  padding: 0;
+  height: 0;
 }
 
 .news__container {

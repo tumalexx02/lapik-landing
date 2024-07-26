@@ -63,3 +63,33 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 991px) {
+  .lapik-techs {
+    padding: 60px 0 80px;
+  }
+  .lapik-techs__wrapper {
+    flex-direction: column-reverse;
+    gap: 30px;
+    align-items: center;
+  }
+  .lapik-techs__text-wrapper {
+    width: 100%;
+  }
+  .lapik-techs__image {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .lapik-techs__text {
+    margin-bottom: 24px;
+  }
+  .lapik-techs__list .lapik-techs__list-item-text {
+    margin-bottom: 24px;
+  }
+  .lapik-techs__image {
+    width: 100%;
+  }
+
+}

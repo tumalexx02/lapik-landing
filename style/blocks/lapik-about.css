@@ -67,3 +67,27 @@
   height: 0;
   margin-bottom: 0;
 }
+
+@media (max-width: 1199px) {
+  .lapik-about {
+    padding: 160px 0 120px;
+  }
+}
+
+@media (max-width: 991px) {
+  .lapik-about {
+    padding: 120px;
+  }
+  .lapik-about__title {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .lapik-about {
+    padding: 90px 0;
+  }
+  .lapik-about__title {
+    font-size: 48px;
+  }
+}

@@ -1,4 +1,5 @@
 .triple-grid-section {
+  scroll-margin-top: 120px;
   padding-top: var(--top-padding);
 }
 
@@ -67,13 +68,6 @@
   margin-top: calc(75% - 16px - 32px - 24px);
 }
 
-.triple-grid-section__card:hover .triple-grid-section__card-button {
-  padding: 12px 32px;
-  margin-top: 16px;
-  opacity: 1;
-  max-height: 56px;
-}
-
 .triple-grid-section__card-button {
   z-index: 2;
   max-height: 0;
@@ -85,3 +79,84 @@
   transition: margin 0.2s, opacity 0.2s, max-height 0.2s, padding 0.2s;
 }
 
+@media (hover: hover) {
+  .triple-grid-section__card:hover .triple-grid-section__card-button {
+    padding: 12px 32px;
+    margin-top: 16px;
+    opacity: 1;
+    max-height: 56px;
+  }
+}
+
+@media (hover: none) {
+  .triple-grid-section__card-button {
+    padding: 12px 32px;
+    margin-top: 16px;
+    opacity: 1;
+    max-height: 56px;
+  }
+}
+
+@media (max-width: 1859px) {
+  .triple-grid-section__card {
+    padding: 60px;
+  }
+  .triple-grid-section__card h5 {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 6px;
+  }
+  .triple-grid-section__card-subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .triple-grid-section__card-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .triple-grid-section__card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .triple-grid-section__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .triple-grid-section__card {
+    aspect-ratio: 7/4;
+    justify-content: center;
+    padding: 80px;
+  }
+  .triple-grid-section__card h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .triple-grid-section__card:hover h5 {
+    margin-top: 0;
+  }
+  .triple-grid-section__card-subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .triple-grid-section__card {
+    padding: 40px;
+  }
+  .triple-grid-section__card h5 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  .triple-grid-section__card-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

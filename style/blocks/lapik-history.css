@@ -46,3 +46,19 @@
 .lapik-history__dates li:last-child .lapik-history__description {
   border-left: none;
 }
+
+@media (max-width: 1199px) {
+  .lapik-history__year {
+    font-size: 20px;
+  }
+  .lapik-history__description {
+    line-height: 28px;
+    padding: 10px 0 30px 27.5px;
+  }
+}
+
+@media (max-width: 991px) {
+  .lapik-history:not(.lapik-history_hidden) {
+    padding: 60px 0;
+  }
+}

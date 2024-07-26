@@ -85,3 +85,35 @@
 .lapik-modal-form__close-btn:hover path {
   fill: #222222;
 }
+
+@media (max-width: 991px) {
+  .lapik-modal-form__wrapper {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .lapik-modal-form__wrapper {
+    padding: 30px;
+  }
+  .lapik-modal-form__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .lapik-modal-form__form input, .lapik-modal-form__form textarea {
+    font-size: 15px;
+    padding: 16px 18px;
+  }
+  .lapik-modal-form__form {
+    gap: 12px;
+  }
+  .lapik-modal-form__form button {
+    margin-top: 12px;
+    font-size: 15px;
+    padding: 16px 18px;
+  }
+  .lapik-modal-form__close-btn {
+    top: 30px;
+    right: 30px;
+  }
+}
