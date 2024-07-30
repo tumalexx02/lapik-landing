@@ -20,6 +20,15 @@ window.addEventListener('scroll', () => {
   }
 });
 
+window.addEventListener('load', () => {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  if (scrollTop > 40) {
+    header.classList.add('lapik-header__painted');
+  } else {
+    header.classList.remove('lapik-header__painted');
+  }
+});
+
 
 
 const aboutSections = document.querySelector('.lapik-about')
@@ -181,3 +190,14 @@ var swiper = new Swiper('.swiper-container', {
     disableOnInteraction: false,
   },
 });
+
+
+
+const newsAnchorLinks = document.querySelectorAll('[href="#news"]');
+const newsAboutButton = document.querySelector('lapik-about__button')
+
+newsAnchorLinks.forEach(link => link.addEventListener('click', () => {
+  newsSection.classList.remove('news_hidden');
+  historySection.classList.add('lapik-history_hidden');
+  newsAboutButton.classList.add('lapik-about__button_active')
+}));

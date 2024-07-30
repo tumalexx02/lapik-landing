@@ -236,3 +236,22 @@
     gap: 30px;
   }
 }
+
+@media (max-width: 575px) {
+  .lapik-footer__links-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .lapik-footer__links-wrapper a {
+    font-size: 14px;
+  }
+  .lapik-footer__credits > span {
+    font-size: 14px;
+  }
+  .lapik-footer__credits a {
+    font-size: 14px;
+  }
+  .lapik-footer__dev-logo span {
+    font-size: 14px;
+  }
+}

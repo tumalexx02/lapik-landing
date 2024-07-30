@@ -86,3 +86,14 @@
     line-height: 48px;
   }
 }
+
+@media (max-width: 575px) {
+  .lapik-modal-window__main-title {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .lapik-modal-window__title {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+}

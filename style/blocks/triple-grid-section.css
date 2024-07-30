@@ -160,3 +160,10 @@
     line-height: 24px;
   }
 }
+
+@media (max-width: 575px) {
+  .triple-grid-section__card {
+    aspect-ratio: 7/6;
+    padding: 10px;
+  }
+}

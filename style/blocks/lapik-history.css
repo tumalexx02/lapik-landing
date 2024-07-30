@@ -62,3 +62,9 @@
     padding: 60px 0;
   }
 }
+
+@media (max-width: 575px) {
+  .lapik-history:not(.lapik-history_hidden) {
+    padding: 60px 30px;
+  }
+}

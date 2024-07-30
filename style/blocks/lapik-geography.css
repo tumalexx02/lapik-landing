@@ -80,3 +80,14 @@
     transform: translateY(-65%);
   }
 }
+
+@media (max-width: 575px) {
+  .lapik-geography__map {
+    position: static;
+    transform: translateY(0);
+    margin-top: 32px;
+  }
+  .lapik-geography__methods-title {
+    margin-top: 32px;
+  }
+}
