@@ -4,6 +4,15 @@
   padding: 80px 0;
 }
 
+.lapik-geography .lapik-text {
+  z-index: 5;
+}
+
+.lapik-geography__left {
+  position: relative;
+  z-index: 1;
+}
+
 .lapik-geography__methods-title {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
@@ -23,6 +32,7 @@
   display: flex;
   justify-content: end;
   flex-direction: column;
+  z-index: 4;
 }
 
 .lapik-geography__method > img {
@@ -40,22 +50,74 @@
 
 .lapik-geography__map {
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   right: 0;
-  z-index: -1;
+  z-index: 1;
+}
+
+.lapik-geography__map svg {
+  width: 100%;
+}
+
+.lapik-geography__map-label {
+  position: absolute;
+  z-index: 10;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.map-city-mark {
+  position: relative;
+  z-index: 3;
+}
+
+.map-city-mark::before {
+  content: '123';
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+  z-index: 6;
+}
+
+@media (max-width: 1399px) {
+  .lapik-geography__map {
+    width: 92%;
+  }
+  .lapik-geography__methods-title {
+    margin-top: 300px;
+  }
+  .lapik-geography__methods-wrapper {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 991px) {
+  .lapik-geography__map {
+    width: 100%;
+    position: static;
+    transform: translateY(0);
+    margin-top: 32px;
+  }
+  .lapik-geography__map svg {
+    height: 100%;
+  }
   .lapik-geography__methods-title {
     margin-top: 180px;
   }
   .lapik-geography__methods-wrapper {
     margin-top: 10px;
   }
-  .lapik-geography__map {
-    top: 70%;
-    transform: translateY(-70%);
+  .lapik-geography__methods-title {
+    margin-top: 0;
+  }
+  .lapik-geography__map-label {
+    font-size: 12px;
   }
 }
 
@@ -63,7 +125,6 @@
   .lapik-geography__methods-title {
     font-size: 18px;
     line-height: 32px;
-    margin-top: 240px;
   }
   .lapik-geography__method > img {
     width: 36px;
@@ -75,18 +136,9 @@
     color: #444444;
     display: inline-block;
   }
-  .lapik-geography__map {
-    top: 65%;
-    transform: translateY(-65%);
-  }
 }
 
 @media (max-width: 575px) {
-  .lapik-geography__map {
-    position: static;
-    transform: translateY(0);
-    margin-top: 32px;
-  }
   .lapik-geography__methods-title {
     margin-top: 32px;
   }

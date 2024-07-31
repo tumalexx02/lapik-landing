@@ -201,3 +201,60 @@ newsAnchorLinks.forEach(link => link.addEventListener('click', () => {
   historySection.classList.add('lapik-history_hidden');
   newsAboutButton.classList.add('lapik-about__button_active')
 }));
+
+
+
+const mapMarks = document.querySelectorAll('.map-city-mark');
+const mainMapMark = document.querySelector('.map-city-mark_main');
+const mapLabel = document.querySelector('.lapik-geography__map-label');
+
+if (window.innerWidth <= 991) {
+  const mainMapMarkRect = mainMapMark.getClientRects()[0];
+  const geographyContainerRect = document.querySelector('.lapik-geography .container').getClientRects()[0];
+  const mapLaberRect = mapLabel.getClientRects()[0];
+  mapLabel.innerHTML = mainMapMark.getAttribute('data-city-name');
+  mapLabel.style.opacity = 1;
+  mapLabel.style.left = `${mainMapMarkRect.left - geographyContainerRect.left - mapLaberRect.width*1.56}px`;
+  mapLabel.style.top = `${mainMapMarkRect.top - geographyContainerRect.top - mapLaberRect.height - 16}px`;
+}
+
+mapMarks.forEach(mark => {
+  mark.addEventListener('mouseover', (e) => {
+    if (window.innerWidth <= 991) {
+      return;
+    }
+    const cityName = mark.getAttribute('data-city-name')
+    mapLabel.innerHTML = cityName
+    mapLabel.style.opacity = 1;
+    const geographyContainerRect = document.querySelector('.lapik-geography .container').getClientRects()[0];
+    const mapLaberRect = mapLabel.getClientRects()[0];
+    const rect = e.target.getClientRects()[0];
+    mapLabel.style.left = `${rect.left - geographyContainerRect.left - mapLaberRect.width/2.5}px`;
+    mapLabel.style.top = `${rect.top - geographyContainerRect.top - mapLaberRect.height - 4}px`;
+    console.log()
+  })
+
+  mark.addEventListener('mouseout', () => {
+    if (window.innerWidth <= 991) {
+      return;
+    }
+    mapLabel.style.opacity = 0;
+  })
+})
+
+window.addEventListener('resize', () => {
+  const mainMapMark = document.querySelector('.map-city-mark_main');
+  const mapLabel = document.querySelector('.lapik-geography__map-label');
+
+  if (window.innerWidth > 991) {
+    mapLabel.style.opacity = 0;
+  } else {
+    const mainMapMarkRect = mainMapMark.getClientRects()[0];
+    const geographyContainerRect = document.querySelector('.lapik-geography .container').getClientRects()[0];
+    const mapLaberRect = mapLabel.getClientRects()[0];
+    mapLabel.innerHTML = mainMapMark.getAttribute('data-city-name');
+    mapLabel.style.opacity = 1;
+    mapLabel.style.left = `${mainMapMarkRect.left - geographyContainerRect.left - mapLaberRect.width/2.5}px`;
+    mapLabel.style.top = `${mainMapMarkRect.top - geographyContainerRect.top - mapLaberRect.height - 4}px`;
+  }
+})
