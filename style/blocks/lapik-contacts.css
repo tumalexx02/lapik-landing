@@ -90,6 +90,7 @@
 
 .lapik-contacts__form textarea {
   padding: 18px 20px;
+  color: #222222;
   background-color: #FFFFFF;
   border: 1px solid #CCCCCC;
   resize: none;
@@ -104,4 +105,10 @@
   color: #FFFFFF;
   background-color: var(--accent-color);
   cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  .lapik-contacts__form-wrapper {
+    margin-top: 64px;
+  }
 }

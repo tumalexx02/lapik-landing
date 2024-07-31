@@ -54,7 +54,7 @@
   list-style-type: none;
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 42px;
 }
 
 .lapik-header__link {
@@ -65,6 +65,11 @@
 
 .lapik-header__link:hover, .lapik-header__painted .lapik-header__link:hover {
   color: var(--accent-color);
+}
+
+.lapik-header__phone {
+  display: flex;
+  justify-content: end;
 }
 
 .lapik-header__phone > a {
@@ -161,6 +166,10 @@
   border: 1px solid var(--accent-color);
 }
 
+.lapik-header__icn {
+  margin-right: 16px;
+}
+
 @media (max-width: 1399px) {
   .lapik-header__links {
     gap: 36px;
@@ -184,11 +193,14 @@
     font-size: 14px;
   }
   .lapik-header__phone > a {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 991px) {
+  .lapik-header__icn {
+    display: none;
+  }
   .lapik-header__menu {
     display: none;
   }
