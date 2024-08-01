@@ -116,3 +116,9 @@
     margin-top: 64px;
   }
 }
+
+@media (max-width: 1199px) {
+  .lapik-contacts__contacts {
+    margin-top: 0;
+  }
+}

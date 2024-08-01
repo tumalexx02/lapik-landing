@@ -1,5 +1,6 @@
 .lapik-history {
-  padding: 60px 0 180px;
+  padding-top: var(--top-padding);
+  padding-bottom: var(--bottom-padding);
   height: 100%;
   overflow: hidden;
   transition: padding 0.3s;

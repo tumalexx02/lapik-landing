@@ -149,9 +149,6 @@
 }
 
 @media (max-width: 1199px) {
-  .lapik-products {
-    padding: 120px 0;
-  }
   .lapik-products__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -171,9 +168,6 @@
 }
 
 @media (max-width: 767px) {
-  .lapik-products {
-    padding: 120px 0;
-  }
   .lapik-products__button {
     margin-top: 50px;
   }
@@ -193,9 +187,6 @@
 }
 
 @media (max-width: 575px) {
-  .lapik-products {
-    padding: 80px 0;
-  }
   .lapik-products__grid-card {
     padding: 16px;
     font-size: 16px;

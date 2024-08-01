@@ -1,4 +1,8 @@
 @media (max-width: 767px) {
+  :root {
+    --top-padding: 60px !important;
+    --bottom-padding: 60px !important;
+  }
   .lapik-title {
     font-size: 32px !important;
     line-height: 48px !important;
