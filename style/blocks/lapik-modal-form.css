@@ -61,6 +61,10 @@
   resize: none;
 }
 
+.lapik-modal-form__form span {
+  color: #222222;
+}
+
 .lapik-modal-form__form button {
   margin-top: 20px;
   padding: 18px;

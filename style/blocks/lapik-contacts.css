@@ -96,6 +96,10 @@
   resize: none;
 }
 
+.lapik-contacts__form span {
+  color: #222222;
+}
+
 .lapik-contacts__form button, .lapik-contacts__contacts-button {
   margin-top: 20px;
   padding: 18px;

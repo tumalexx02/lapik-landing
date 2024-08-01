@@ -193,7 +193,7 @@ var swiper = new Swiper('.swiper-container', {
 
 
 
-const newsAnchorLinks = document.querySelectorAll('[href="#news"]');
+const newsAnchorLinks = document.querySelectorAll('[href="#news"]:not(.lapik-about__button)');
 const newsAboutButton = document.querySelector('lapik-about__button')
 
 newsAnchorLinks.forEach(link => link.addEventListener('click', () => {
@@ -201,8 +201,6 @@ newsAnchorLinks.forEach(link => link.addEventListener('click', () => {
   historySection.classList.add('lapik-history_hidden');
   newsAboutButton.classList.add('lapik-about__button_active')
 }));
-
-
 
 const mapMarks = document.querySelectorAll('.map-city-mark');
 const mainMapMark = document.querySelector('.map-city-mark_main');

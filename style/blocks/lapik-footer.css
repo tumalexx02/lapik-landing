@@ -90,6 +90,10 @@
   gap: 20px;
 }
 
+.lapik-footer__form span {
+  color: #FFFFFF;
+}
+
 .lapik-footer__form input, textarea {
   width: 100%;
   font-size: 18px;
