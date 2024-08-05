@@ -75,6 +75,10 @@
   background-color: var(--accent-color);
 }
 
+.lapik-modal-form__form span {
+  color: #222222;
+}
+
 .lapik-modal-form__close-btn {
   position: absolute;
   top: 40px;
@@ -94,6 +98,9 @@
   .lapik-modal-form__wrapper {
     padding: 60px;
   }
+  .lapik-modal-form__form span {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -105,7 +112,7 @@
     line-height: 28px;
   }
   .lapik-modal-form__form input, .lapik-modal-form__form textarea {
-    font-size: 15px;
+    font-size: 12px;
     padding: 16px 18px;
   }
   .lapik-modal-form__form {
@@ -113,8 +120,11 @@
   }
   .lapik-modal-form__form button {
     margin-top: 12px;
-    font-size: 15px;
+    font-size: 12px;
     padding: 16px 18px;
+  }
+  .lapik-modal-form__form span {
+    font-size: 10px;
   }
   .lapik-modal-form__close-btn {
     top: 30px;

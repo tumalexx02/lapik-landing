@@ -63,10 +63,6 @@
   transition: color 0.1s ease;
 }
 
-.lapik-header__link:hover, .lapik-header__painted .lapik-header__link:hover {
-  color: var(--accent-color);
-}
-
 .lapik-header__phone {
   display: flex;
   justify-content: end;
@@ -82,20 +78,12 @@
   transition: color 0.1s ease;
 }
 
-.lapik-header__phone > a:hover {
-  color: var(--accent-color) !important;
-}
-
 .lapik-header__phone > a > span {
   margin-left: 10px;
 }
 
 .lapik-header__phone > a > svg > path {
   transition: fill 0.1s ease;
-}
-
-.lapik-header__phone > a:hover path {
-  fill: var(--accent-color);
 }
 
 .lapik-header__painted {
@@ -118,8 +106,9 @@
   color: #222222;
 }
 
+
 .lapik-header__painted .lapik-header__phone svg > path {
-  fill: var(--accent-color);
+  fill: #222222;
   transition: fill 0.2s ease;
 }
 
@@ -170,6 +159,26 @@
   margin-right: 16px;
 }
 
+.lapik-header__phone-wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+@media (hover: hover) {
+  .lapik-header__phone-wrapper:hover path {
+    fill: var(--accent-color) !important;
+  }
+  .lapik-header__phone-wrapper:hover span {
+    color: var(--accent-color);
+  }
+  .lapik-header__icn:hover path {
+    fill: var(--accent-color) !important;
+  }
+  .lapik-header__links a:hover {
+    color: var(--accent-color);
+  }
+}
+
 @media (max-width: 1399px) {
   .lapik-header__links {
     gap: 36px;
@@ -198,6 +207,12 @@
 }
 
 @media (max-width: 991px) {
+  .lapik-header {
+    padding: 28px 0;
+  }
+  :root {
+    --header-height: 104px !important;
+  }
   .lapik-header__icn {
     display: none;
   }
@@ -231,18 +246,27 @@
   .lapik-header__painted .lapik-header__hamburger-icn {
     border: none;
   }
-  .lapik-header__painted .lapik-header__hamburger-icn svg > path {
-    fill: var(--accent-color);
+  .lapik-header__painted .lapik-header__hamburger-icn svg path {
+    fill: var(--accent-color) !important;
   }
   .lapik-header__painted .lapik-header__phone .lapik-header__phone-icn {
     border: 1px solid var(--accent-color);
   }
+  .lapik-header__painted .lapik-header__phone svg > path {
+    fill: var(--accent-color) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .lapik-header {
+    padding: 10px 0; 
+   }
+   :root {
+    --header-height: 68px !important;
+  }
 }
 
 @media (max-width: 575px) {
-  .lapik-header {
-    padding: 28px 0; 
-   }
    .lapik-header__logo-link img, .lapik-header__logo-link_painted img {
      height: 32px;
    }

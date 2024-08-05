@@ -1,7 +1,7 @@
 .news {
   padding-top: var(--top-padding);
   padding-bottom: var(--bottom-padding);
-  scroll-margin-top: 120px;
+  scroll-margin-top: var(--header-height);
   overflow: hidden;
   transition: padding 0.3s;
 }

@@ -42,14 +42,16 @@ aboutButtons.forEach((btn, _, btns) => btn.addEventListener('click', (e) => {
     aboutSections.classList.remove('lapik-about_active');
     historySection.classList.add('lapik-history_hidden');
     newsSection.classList.add('news_hidden');
+    e.target.setAttribute('href', '#lapik-about');
     return;
   };
+
+  const typeOfInfo = e.target.getAttribute('data-about-type');
 
   btns.forEach(button => button.classList.remove('lapik-about__button_active'))
   e.target.classList.add('lapik-about__button_active');
   aboutSections.classList.add('lapik-about_active');
-
-  const typeOfInfo = e.target.getAttribute('data-about-type');
+  e.target.setAttribute('href', `#lapik-${typeOfInfo}`);
 
   if (typeOfInfo === 'history') {
     historySection.classList.remove('lapik-history_hidden');
@@ -179,7 +181,12 @@ closeNewsModalBtn.addEventListener('click', () => {
   freeBackgroundScroll();
 })
 
-var swiper = new Swiper('.swiper-container', {
+
+
+const heroSection = document.querySelector('.lapik-hero')
+const hammer = new Hammer(heroSection)
+
+const swiper = new Swiper('.swiper-container', {
   loop: true,
   pagination: {
     el: '.swiper-pagination',
@@ -189,6 +196,16 @@ var swiper = new Swiper('.swiper-container', {
     delay: 5000,
     disableOnInteraction: false,
   },
+});
+
+// Detect swipe left
+hammer.on('swipeleft', function() {
+  swiper.slideNext();
+});
+
+// Detect swipe right
+hammer.on('swiperight', function() {
+  swiper.slidePrev();
 });
 
 
@@ -206,7 +223,7 @@ const mapMarks = document.querySelectorAll('.map-city-mark');
 const mainMapMark = document.querySelector('.map-city-mark_main');
 const mapLabel = document.querySelector('.lapik-geography__map-label');
 
-if (window.innerWidth <= 991) {
+if (isTouchDevice()) {
   const mainMapMarkRect = mainMapMark.getClientRects()[0];
   const geographyContainerRect = document.querySelector('.lapik-geography .container').getClientRects()[0];
   const mapLaberRect = mapLabel.getClientRects()[0];
@@ -218,7 +235,7 @@ if (window.innerWidth <= 991) {
 
 mapMarks.forEach(mark => {
   mark.addEventListener('mouseover', (e) => {
-    if (window.innerWidth <= 991) {
+    if (isTouchDevice()) {
       return;
     }
     const cityName = mark.getAttribute('data-city-name')
@@ -233,7 +250,7 @@ mapMarks.forEach(mark => {
   })
 
   mark.addEventListener('mouseout', () => {
-    if (window.innerWidth <= 991) {
+    if (isTouchDevice()) {
       return;
     }
     mapLabel.style.opacity = 0;

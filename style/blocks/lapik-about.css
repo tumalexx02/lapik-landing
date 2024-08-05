@@ -1,4 +1,5 @@
 .lapik-about {
+  scroll-margin-top: var(--header-height);
   position: relative;
   padding: 264px 0 184px;
   background: url(/img/about-banner.jpeg) center center / cover no-repeat;
@@ -81,6 +82,15 @@
   .lapik-about__title {
     margin-bottom: 32px;
   }
+  .lapik-about__buttons-wrapper {
+    gap: 20px;
+  }
+  .lapik-about__button {
+    font-size: 14px;
+  }
+  .lapik-about__text {
+    margin-bottom: 32px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -89,5 +99,9 @@
   }
   .lapik-about__title {
     font-size: 48px;
+  }
+  .lapik-about__buttons-wrapper {
+    flex-direction: column;
+    align-items: start;
   }
 }

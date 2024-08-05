@@ -59,6 +59,7 @@
   font-size: 20px;
   display: flex;
   align-items: center;
+  
   gap: 10px;
   color: #fff;
   transition: 0.2s color ease;
@@ -87,4 +88,12 @@
   .lapik-hamburger__phone {
     margin-top: 20px;
   }
+}
+
+.lapik-hamburger_messengers-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
 }

@@ -1,7 +1,7 @@
 .lapik-geography {
   padding-top: var(--top-padding);
   padding-bottom: var(--bottom-padding);
-  scroll-margin-top: 120px;
+  scroll-margin-top: var(--header-height);
   position: relative;
 }
 
