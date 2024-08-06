@@ -55,10 +55,6 @@
   text-decoration: underline;
 }
 
-.lapik-contacts__contacts-wrapper a:hover {
-  color: var(--accent-color);
-}
-
 .lapik-contacts__links-wrapper {
   display: flex;
   flex-direction: column;
@@ -109,6 +105,12 @@
   color: #FFFFFF;
   background-color: var(--accent-color);
   cursor: pointer;
+}
+
+@media (hover: hover) {
+  .lapik-contacts__contacts-wrapper a:hover {
+    color: var(--accent-color);
+  }
 }
 
 @media (max-width: 1199px) {

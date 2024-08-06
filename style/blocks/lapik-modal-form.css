@@ -90,8 +90,16 @@
   transition: fill 0.1s ease;
 }
 
-.lapik-modal-form__close-btn:hover path {
-  fill: #222222;
+@media (hover: hover) {
+  .lapik-modal-form__close-btn:hover path {
+    fill: #222222;
+  }
+}
+
+@media (hover: none) {
+  .lapik-modal-form__close-btn:active path {
+    fill: #222222;
+  }
 }
 
 @media (max-width: 991px) {

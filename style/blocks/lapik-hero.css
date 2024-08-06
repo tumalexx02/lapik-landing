@@ -54,11 +54,6 @@
   transition: color 0.1s ease, background-color 0.1s ease;
 }
 
-.lapik-hero__button:hover {
-  background-color: var(--accent-color);
-  color: #fff;
-}
-
 .lapik-hero .swiper-container {
   position: absolute;
   top: 0;
@@ -91,7 +86,7 @@
   height: 16px !important;  /* Adjust the size */
   background-color: #fff !important;  /* Adjust the color */
   opacity: 0.7 !important;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; 
 }
 
 .lapik-hero .swiper-pagination-bullet-active {
@@ -99,6 +94,20 @@
   height: 16px;  /* Adjust the size */
   background-color: var(--accent-color) !important;  /* Adjust the color */
   opacity: 1;
+}
+
+@media (hover: hover) {
+  .lapik-hero__button:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+  }
+}
+
+@media (hover: none) {
+  .lapik-hero__button:active {
+    background-color: var(--accent-color);
+    color: #fff;
+  }
 }
 
 @media (max-width: 1199px) {

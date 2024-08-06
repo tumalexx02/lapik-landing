@@ -65,6 +65,18 @@
   margin-bottom: 24px;
 }
 
+@media (hover: hover) {
+  .news-modal-window__close-btn:hover path {
+    fill: #222222;
+  }
+}
+
+@media (hover: hover) {
+  .news-modal-window__close-btn:active path {
+    fill: #222222;
+  }
+}
+
 @media (max-width: 991px) {
   .news-modal-window__wrapper {
     width: 100%;

@@ -68,15 +68,20 @@ const hamburgerBtn = document.querySelector('.lapik-header__hamburger-btn');
 const hamburgerIcon = document.querySelector('.lapik-header__hamburger-icn');
 const closeHamburger = document.querySelector('.lapik-hamburger__close-btn');
 const hamburger = document.querySelector('.lapik-hamburger');
+const hamburgerLinks = document.querySelectorAll('.lapik-hamburger__link');
 
-closeHamburger.addEventListener('click', () => {
+const toggleElements = [...hamburgerLinks, closeHamburger, hamburgerIcon];
+
+toggleElements.forEach(el => el.addEventListener('click', () => {
   hamburger.classList.toggle('lapik-hamburger_active');
   hamburgerBtn.classList.toggle('lapik-header__hamburger-btn_active');
-})
+}));
 
-hamburgerIcon.addEventListener('click', () => {
-  hamburger.classList.toggle('lapik-hamburger_active');
-  hamburgerBtn.classList.toggle('lapik-header__hamburger-btn_active');
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 991) {
+    hamburger.classList.remove('lapik-hamburger_active');
+    hamburgerBtn.classList.remove('lapik-header__hamburger-btn_active');
+  }
 })
 
 
@@ -280,6 +285,20 @@ new Swiper('.news__swiper-container', {
   spaceBetween: 128,
   pagination: {
     el: '.news__swiper-pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+});
+
+new Swiper('.history__swiper-container', {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 128,
+  pagination: {
+    el: '.history__swiper-pagination',
     clickable: true,
   },
   autoplay: {

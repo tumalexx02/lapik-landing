@@ -1,4 +1,5 @@
 .lapik-hamburger {
+  display: none;
   position: fixed;
   right: 0;
   top: 0;
@@ -50,10 +51,6 @@
   transition: 0.2s color ease;
 }
 
-.lapik-hamburger__link:hover {
-  color: var(--accent-color);
-}
-
 .lapik-hamburger__phone {
   margin-top: 64px;
   font-size: 20px;
@@ -65,16 +62,48 @@
   transition: 0.2s color ease;
 }
 
-.lapik-hamburger__phone:hover svg > path {
-  transition: 0.2s fill ease;
+.lapik-hamburger_messengers-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
 }
 
-.lapik-hamburger__phone:hover svg > path {
-  fill: var(--accent-color);
+@media (hover: hover) {
+  .lapik-hamburger__link:hover {
+    color: var(--accent-color);
+  }
+  .lapik-hamburger__phone:hover svg > path {
+    transition: 0.2s fill ease;
+  }
+  .lapik-hamburger__phone:hover svg > path {
+    fill: var(--accent-color);
+  }
+  .lapik-hamburger__phone:hover {
+    color: var(--accent-color);
+  }  
 }
 
-.lapik-hamburger__phone:hover {
-  color: var(--accent-color);
+@media (hover: none) {
+  .lapik-hamburger__link:active {
+    color: var(--accent-color);
+  }
+  .lapik-hamburger__phone:active svg > path {
+    transition: 0.2s fill ease;
+  }
+  .lapik-hamburger__phone:active svg > path {
+    fill: var(--accent-color);
+  }
+  .lapik-hamburger__phone:active {
+    color: var(--accent-color);
+  }
+}
+
+@media (max-width: 991px) {
+  .lapik-hamburger {
+    display: block;
+  }
 }
 
 @media (max-width: 575px) {
@@ -84,16 +113,9 @@
   .lapik-hamburger__link {
     padding: 24px 0;
     font-size: 16px;
+    margin: 0 auto;
   }
   .lapik-hamburger__phone {
     margin-top: 20px;
   }
-}
-
-.lapik-hamburger_messengers-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  justify-content: center;
-  margin-top: 16px;
 }

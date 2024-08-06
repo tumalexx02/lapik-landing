@@ -54,11 +54,6 @@
   padding: 17px 16px;
 }
 
-.lapik-about__button:hover {
-  background-color: var(--accent-color);
-  color: #fff;
-}
-
 .lapik-about__button_active {
   background-color: var(--accent-color);
   color: #fff;
@@ -68,6 +63,20 @@
   height: 0;
   margin-bottom: 0;
 } */
+
+@media (hover: hover) {
+  .lapik-about__button:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+  }
+}
+
+@media (hover: none) {
+  .lapik-about__button:active {
+    background-color: var(--accent-color);
+    color: #fff;
+  }
+}
 
 @media (max-width: 1199px) {
   .lapik-about {

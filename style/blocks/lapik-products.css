@@ -142,6 +142,21 @@
   }
 }
 
+@media (hover: none) {
+  .lapik-products__grid-card:active > .lapik-products__grid-card-img {
+    opacity: 0;
+  }
+
+  .lapik-products__grid-card:active {
+    background-color: var(--accent-color);
+  }
+
+  .lapik-products__button:active {
+    background-color: transparent;
+    color: #222;
+  }
+}
+
 @media (max-width: 1399px) {
   .lapik-products__left-wrapper {
     width: 45%;
