@@ -273,3 +273,17 @@ window.addEventListener('resize', () => {
     mapLabel.style.top = `${mainMapMarkRect.top - geographyContainerRect.top - mapLaberRect.height - 4}px`;
   }
 })
+
+new Swiper('.news__swiper-container', {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 128,
+  pagination: {
+    el: '.news__swiper-pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+});
