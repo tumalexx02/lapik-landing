@@ -1,9 +1,16 @@
+:root {
+  --header-icon-size: 48px;
+  --header-icon-inner-paddeing: 5px;
+  --header-padding: 40px;
+  --header-height: 120px;
+}
+
 .lapik-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 0;
+  padding: var(--header-padding) 0;
   z-index: 1000;
   background-color: transparent;
   transition: background-color 0.3s;
@@ -84,7 +91,9 @@
 }
 
 .lapik-header__painted {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .lapik-header__painted .lapik-header__logo-link_painted {
@@ -127,10 +136,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  height: 48px;
-  width: 48px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: var(--header-icon-inner-paddeing);
+  height: var(--header-icon-size);
+  /* width: var(--header-icon-size); */
+  /* border: 1px solid rgba(255, 255, 255, 0.6); */
   cursor: pointer;
   transition: border 0.2s ease;
 }
@@ -149,7 +158,7 @@
 }
 
 .lapik-header__painted .lapik-header__hamburger-btn .lapik-header__hamburger-icn {
-  border: 1px solid var(--accent-color);
+  /* border: 1px solid var(--accent-color); */
 }
 
 .lapik-header__icn {
@@ -161,6 +170,10 @@
 
 .lapik-header__phone-wrapper {
   display: flex;
+}
+
+.lapik-header__phone .lapik-header__phone-icn {
+  display: none;
 }
 
 @media (hover: hover) {
@@ -226,19 +239,19 @@
 
 @media (max-width: 991px) {
   .lapik-header {
-    padding: 28px 0;
+    padding: var(--header-padding) 0;
   }
   :root {
     --header-height: 104px !important;
+    --header-icon-inner-paddeing: 2px;
+    --header-icon-size: 36px;
+    --header-padding: 28px;
   }
   .lapik-header__icn {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    height: 36px;
-    width: 36px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: var(--header-icon-inner-paddeing);
   }
   .lapik-header__icn svg {
     height: 100%;
@@ -269,28 +282,26 @@
   .lapik-header__painted .lapik-header__hamburger-icn svg path {
     fill: var(--accent-color) !important;
   }
-  .lapik-header__painted .lapik-header__icn {
+  /* .lapik-header__painted .lapik-header__icn {
     border: 1px solid var(--accent-color);
   }
   .lapik-header__painted .lapik-header__phone .lapik-header__phone-icn {
     border: 1px solid var(--accent-color);
-  }
+  } */
   .lapik-header__painted .lapik-header__phone svg > path {
     fill: var(--accent-color) !important;
   }
-}
-
-@media (max-width: 991px) and (hover: hover) {
-  .lapik-header__icn:hover {
-    border: 1px solid var(--accent-color);
+  .lapik-header__phone .lapik-header__phone-icn {
+    display: flex;
+  }
+  .lapik-header__phone-wrapper {
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
-  .lapik-header {
-    padding: 10px 0; 
-   }
    :root {
     --header-height: 60px !important;
+    --header-padding: 10px;
   }
 }

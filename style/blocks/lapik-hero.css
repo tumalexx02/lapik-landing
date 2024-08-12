@@ -1,8 +1,13 @@
+:root {
+  --hero-bullet-size: 16px;
+  --hero-bottom-padding: 247px;
+}
+
 .lapik-hero {
   position: relative;
   /* background: url(/img/hero-banner.jpg) center center / cover no-repeat; */
   position: relative;
-  padding: 247px 0;
+  padding: 247px 0 var(--hero-bottom-padding);
   background-color: rgba(0,0,0,0.4);
   overflow: hidden;
 }
@@ -82,17 +87,17 @@
 }
 
 .lapik-hero .swiper-pagination-bullet {
-  width: 16px !important;  /* Adjust the size */
-  height: 16px !important;  /* Adjust the size */
-  background-color: #fff !important;  /* Adjust the color */
+  width: var(--hero-bullet-size) !important;
+  height: var(--hero-bullet-size) !important;
+  background-color: #fff !important;
   opacity: 0.7 !important;
   transition: opacity 0.3s ease; 
 }
 
 .lapik-hero .swiper-pagination-bullet-active {
-  width: 16px;  /* Adjust the size */
-  height: 16px;  /* Adjust the size */
-  background-color: var(--accent-color) !important;  /* Adjust the color */
+  width: var(--hero-bullet-size);
+  height: var(--hero-bullet-size);
+  background-color: var(--accent-color) !important;
   opacity: 1;
 }
 
@@ -111,8 +116,8 @@
 }
 
 @media (max-width: 1199px) {
-  .lapik-hero {
-    padding-bottom: 200px;
+  :root {
+    --hero-bottom-padding: 200px;
   }
   .lapik-hero__title, .lapik-about__title {
     font-size: 56px;
@@ -127,8 +132,8 @@
 }
 
 @media (max-width: 991px) {
-  .lapik-hero {
-    padding-bottom: 200px;
+  :root {
+    --hero-bullet-size: 12px;
   }
   .lapik-hero__buttons-wrapper, .lapik-about__buttons-wrapper{
     justify-content: space-between;
@@ -141,13 +146,22 @@
   }
   .lapik-hero__subtitle {
     margin-bottom: 60px;
+  }  
+  .lapik-hero .swiper-pagination {
+    bottom: calc((var(--hero-bottom-padding) - var(--hero-bullet-size))/2) !important;
+    justify-content: center;
+    right: auto !important;
+    margin-top: calc(var(--hero-bottom-padding)/2);
   }
 }
 
 @media (max-width: 767px) {
+  :root {
+    --hero-bullet-size: 10px;
+    --hero-bottom-padding: 120px;
+  }
   .lapik-hero {
     padding-top: 200px;
-    padding-bottom: 120px;
   }
   .lapik-hero__title {
     font-size: 48px;
@@ -167,6 +181,9 @@
 }
 
 @media (max-width: 575px) {
+  :root {
+    --hero-bottom-padding: 80px;
+  }
   .lapik-hero {
     padding-top: 130px;
     padding-bottom: 80px;
