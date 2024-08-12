@@ -5,7 +5,7 @@
 
 .news {
   padding-top: var(--top-padding);
-  padding-bottom: var(--bottom-padding);
+  /* padding-bottom: var(--bottom-padding); */
   scroll-margin-top: var(--header-height);
   overflow: hidden;
   transition: padding 0.3s;
@@ -124,9 +124,9 @@
 }
 
 @media (max-width: 767px) {
-  .news {
+  /* .news {
     padding-bottom: calc(var(--bottom-padding) - var(--dot-size) - var(--pagination-margin-top));
-  }
+  } */
   .news__container {
     display: none;
   }

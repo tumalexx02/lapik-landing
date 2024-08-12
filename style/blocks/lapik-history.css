@@ -1,6 +1,6 @@
 .lapik-history {
   padding-top: var(--top-padding);
-  padding-bottom: var(--bottom-padding);
+  /* padding-bottom: var(--bottom-padding); */
   height: 100%;
   overflow: hidden;
   transition: padding 0.3s;
@@ -86,9 +86,9 @@
 }
 
 @media (max-width: 767px) {
-  .lapik-history {
+  /* .lapik-history {
     padding-bottom: calc(var(--bottom-padding) - var(--dot-size) - var(--pagination-margin-top));
-  }
+  } */
   .lapik-history__dates {
     display: none;
   }
