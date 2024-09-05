@@ -80,6 +80,9 @@
       </div>
     </div>
   </header>
+  <!-- done -->
+
+
 
   <div class="lapik-hamburger">
     <div class="lapik-hamburger__close-btn">
@@ -801,6 +804,33 @@
     </div>
   </section>
 
+  <div class="lapik-modal-form lapik-modal-form_hidden">
+    <div class="row">
+      <div class="lapik-modal-form__wrapper">
+        <div class="lapik-modal-form__close-btn">
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.0376546 2.12974L2.15795 0L10.6391 8.51897L8.51884 10.6487L0.0376546 2.12974Z" fill="#888888"/>
+            <path d="M14.8797 4.3345e-05L17 2.12979L8.51884 10.6487L6.39852 8.51902L14.8797 4.3345e-05Z" fill="#888888"/>
+            <path d="M16.9623 14.8703L14.842 17L6.36086 8.48103L8.48116 6.35129L16.9623 14.8703Z" fill="#888888"/>
+            <path d="M2.1203 17L0 14.8702L8.48116 6.35129L10.6015 8.48099L2.1203 17Z" fill="#888888"/>
+          </svg>                    
+        </div>
+        <h5 class="lapik-modal-form__title">Обратная связь</h5>
+        <form action="/submit" method="post" class="lapik-modal-form__form">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" placeholder="Почта" required id="modal-email">
+          <input type="tel" name="phone" placeholder="Телефон" id="modal-phone">
+          <textarea name="message" rows="4" placeholder="Сообщение"></textarea>
+          <button type="submit">Отправить</button>
+          <span>Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.</span>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- done -->
   <footer class="lapik-footer">
     <div class="container">
       <div class="row">
@@ -863,30 +893,6 @@
       </div>
     </div>
   </footer>
-
-  <div class="lapik-modal-form lapik-modal-form_hidden">
-    <div class="row">
-      <div class="lapik-modal-form__wrapper">
-        <div class="lapik-modal-form__close-btn">
-          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.0376546 2.12974L2.15795 0L10.6391 8.51897L8.51884 10.6487L0.0376546 2.12974Z" fill="#888888"/>
-            <path d="M14.8797 4.3345e-05L17 2.12979L8.51884 10.6487L6.39852 8.51902L14.8797 4.3345e-05Z" fill="#888888"/>
-            <path d="M16.9623 14.8703L14.842 17L6.36086 8.48103L8.48116 6.35129L16.9623 14.8703Z" fill="#888888"/>
-            <path d="M2.1203 17L0 14.8702L8.48116 6.35129L10.6015 8.48099L2.1203 17Z" fill="#888888"/>
-          </svg>                    
-        </div>
-        <h5 class="lapik-modal-form__title">Обратная связь</h5>
-        <form action="/submit" method="post" class="lapik-modal-form__form">
-          <input type="text" name="name" placeholder="Ваше имя" required>
-          <input type="tel" name="phone" placeholder="Почта" required id="modal-email">
-          <input type="tel" name="phone" placeholder="Телефон" id="modal-phone">
-          <textarea name="message" rows="4" placeholder="Сообщение"></textarea>
-          <button type="submit">Отправить</button>
-          <span>Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.</span>
-        </form>
-      </div>
-    </div>
-  </div>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/hammerjs/hammer.min.js"></script>

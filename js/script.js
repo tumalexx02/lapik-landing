@@ -51,14 +51,15 @@ aboutButtons.forEach((btn, _, btns) => btn.addEventListener('click', (e) => {
   btns.forEach(button => button.classList.remove('lapik-about__button_active'))
   e.target.classList.add('lapik-about__button_active');
   aboutSections.classList.add('lapik-about_active');
-  e.target.setAttribute('href', `#lapik-${typeOfInfo}`);
 
   if (typeOfInfo === 'history') {
     historySection.classList.remove('lapik-history_hidden');
     newsSection.classList.add('news_hidden');
+    e.target.setAttribute('href', `#lapik-history`);
   } else if (typeOfInfo === 'news') {
     newsSection.classList.remove('news_hidden');
     historySection.classList.add('lapik-history_hidden');
+    e.target.setAttribute('href', `#news`);
   }
 }));
 
